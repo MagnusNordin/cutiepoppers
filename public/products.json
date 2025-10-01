@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "title": "Swim hut",
+    "price": 90,
+    "description": "Swim hut. Size: ca 4 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/swim-hut-pink.jpeg", "/products/swim-hut-black.png"],
+    "category": "Souvenir",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "title": "Football player",
+    "price": 90,
+    "description": "Football player. Size: ca 4 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": [
+      "/products/football-dribbler-pink.jpeg",
+      "/products/football-dribbler-black.png"
+    ],
+    "category": "Sport",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "title": "Football",
+    "price": 90,
+    "description": "Football. Size: 3 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/football-pink.jpeg", "/products/football-black.png"],
+    "category": "Sport",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "title": "Gymnastics",
+    "price": 90,
+    "description": "Gymnastics. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/gymnast.png"],
+    "category": "Sport",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "title": "Hjo heart (I love Hjo)",
+    "price": 90,
+    "description": "For everyone that loves Hjo. Size: ca 3 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/ilovehjo.png"],
+    "category": "Souvenir",
+    "rating": 4.9,
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "title": "Octopus",
+    "price": 90,
+    "description": "Octopus. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/octopus-red.jpg"],
+    "category": "Djur",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "title": "Crayfish",
+    "price": 90,
+    "description": "Crayfish. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/shrimp-red.jpg"],
+    "category": "Djur",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "title": "Anchor",
+    "price": 90,
+    "description": "Anchor. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/anchor-blue.jpg"],
+    "category": "Maritim",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "title": "Crab",
+    "price": 90,
+    "description": "Crab. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/crab-red.jpg"],
+    "category": "Djur",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": 10,
+    "title": "Sailboat",
+    "price": 90,
+    "description": "Sailboat. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/sail-boat-blue.jpg"],
+    "category": "Maritim",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": 11,
+    "title": "Lobster",
+    "price": 90,
+    "description": "Lobster. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/lobster-red.jpg"],
+    "category": "Djur",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": 12,
+    "title": "Lighthouse",
+    "price": 90,
+    "description": "Lighthouse. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/light-house-blue.jpg"],
+    "category": "Maritim",
+    "rating": 4.9,
+    "inStock": true
+  },
+  {
+    "id": 13,
+    "title": "Jellyfish",
+    "price": 90,
+    "description": "Jellyfish. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/jelly-fish-blue.jpg"],
+    "category": "Djur",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": 14,
+    "title": "Cat",
+    "price": 90,
+    "description": "Cat. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/cat-white.jpg"],
+    "category": "Djur",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": 15,
+    "title": "Horse",
+    "price": 90,
+    "description": "Horse. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/horse-pink-2.jpeg", "/products/horse-pink.jpg"],
+    "category": "Djur",
+    "rating": 4.9,
+    "inStock": true
+  },
+  {
+    "id": 16,
+    "title": "Motorcycle",
+    "price": 90,
+    "description": "Motorcycle. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/motorcycle-black.jpeg"],
+    "category": "Transport",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": 17,
+    "title": "Coffee",
+    "price": 90,
+    "description": "Coffee. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/coffee-black.jpg"],
+    "category": "Livsstil",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": 18,
+    "title": "Headphones",
+    "price": 90,
+    "description": "Headphones. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/headphones-pink.jpg"],
+    "category": "Teknik",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": 19,
+    "title": "Mouse",
+    "price": 90,
+    "description": "Mouse. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/mouse-white.jpg"],
+    "category": "Teknik",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": 20,
+    "title": "Morning swimmer",
+    "price": 90,
+    "description": "Morning swimmer. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/morning-swims-white.jpg"],
+    "category": "Sport",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": 21,
+    "title": "Over thinker",
+    "price": 90,
+    "description": "Over thinker. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/over-thinker-red.jpg"],
+    "category": "Livsstil",
+    "rating": 4.9,
+    "inStock": true
+  },
+  {
+    "id": 22,
+    "title": "Språkpolis",
+    "price": 90,
+    "description": "Språkpolis. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/sprak-polis-black.jpg"],
+    "category": "Utbildning",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": 23,
+    "title": "Scissors",
+    "price": 90,
+    "description": "Scissors. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/scissors-pink.jpeg"],
+    "category": "Verktyg",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": 24,
+    "title": "Trinity",
+    "price": 90,
+    "description": "Trinity. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "images": ["/products/trinity-green.jpeg", "/products/trinity-white.jpg"],
+    "category": "Symbolisk",
+    "rating": 4.8,
+    "inStock": true
+  }
+]
