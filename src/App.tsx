@@ -76,7 +76,8 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/products.json");
+        const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
+        const response = await fetch(`${base}/products.json`);
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
