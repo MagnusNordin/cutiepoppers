@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Swim hut",
+    "title": "Badhytt",
     "price": 90,
-    "description": "Swim hut. Size: ca 4 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Badhytt. Storlek: ca 4 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
       "/cutiepoppers/products/swim-hut-pink.jpeg",
       "/cutiepoppers/products/swim-hut-black.png"
@@ -14,9 +14,9 @@
   },
   {
     "id": 2,
-    "title": "Football player",
+    "title": "Fotbollsspelare",
     "price": 90,
-    "description": "Football player. Size: ca 4 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Fotbollsspelare. Storlek: ca 4 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
       "/cutiepoppers/products/football-dribbler-pink.jpeg",
       "/cutiepoppers/products/football-dribbler-black.png"
@@ -27,9 +27,9 @@
   },
   {
     "id": 3,
-    "title": "Football",
+    "title": "Fotboll",
     "price": 90,
-    "description": "Football. Size: 3 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Fotboll. Storlek: 3 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
       "/cutiepoppers/products/football-pink.jpeg",
       "/cutiepoppers/products/football-black.png"
@@ -40,9 +40,9 @@
   },
   {
     "id": 4,
-    "title": "Gymnastics",
+    "title": "Gymnastik",
     "price": 90,
-    "description": "Gymnastics. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Gymnastik. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/gymnast.png"],
     "category": "Sport",
     "rating": 4.8,
@@ -50,9 +50,9 @@
   },
   {
     "id": 5,
-    "title": "Hjo heart (I love Hjo)",
+    "title": "Hjo-hjärta (Jag älskar Hjo)",
     "price": 90,
-    "description": "For everyone that loves Hjo. Size: ca 3 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "För alla som älskar Hjo. Storlek: ca 3 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/ilovehjo.png"],
     "category": "Souvenir",
     "rating": 4.9,
@@ -60,9 +60,9 @@
   },
   {
     "id": 6,
-    "title": "Octopus",
+    "title": "Bläckfisk",
     "price": 90,
-    "description": "Octopus. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Bläckfisk. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/octopus-red.jpg"],
     "category": "Djur",
     "rating": 4.7,
@@ -70,9 +70,9 @@
   },
   {
     "id": 7,
-    "title": "Crayfish",
+    "title": "Kräfta",
     "price": 90,
-    "description": "Crayfish. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Kräfta. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/shrimp-red.jpg"],
     "category": "Djur",
     "rating": 4.6,
@@ -80,9 +80,9 @@
   },
   {
     "id": 8,
-    "title": "Anchor",
+    "title": "Ankare",
     "price": 90,
-    "description": "Anchor. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Ankare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/anchor-blue.jpg"],
     "category": "Maritim",
     "rating": 4.5,
@@ -90,9 +90,9 @@
   },
   {
     "id": 9,
-    "title": "Crab",
+    "title": "Krabba",
     "price": 90,
-    "description": "Crab. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Krabba. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/crab-red.jpg"],
     "category": "Djur",
     "rating": 4.7,
@@ -100,9 +100,9 @@
   },
   {
     "id": 10,
-    "title": "Sailboat",
+    "title": "Segelbåt",
     "price": 90,
-    "description": "Sailboat. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Segelbåt. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/sail-boat-blue.jpg"],
     "category": "Maritim",
     "rating": 4.8,
@@ -110,9 +110,9 @@
   },
   {
     "id": 11,
-    "title": "Lobster",
+    "title": "Hummer",
     "price": 90,
-    "description": "Lobster. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Hummer. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/lobster-red.jpg"],
     "category": "Djur",
     "rating": 4.6,
@@ -120,9 +120,9 @@
   },
   {
     "id": 12,
-    "title": "Lighthouse",
+    "title": "Fyr",
     "price": 90,
-    "description": "Lighthouse. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Fyr. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/light-house-blue.jpg"],
     "category": "Maritim",
     "rating": 4.9,
@@ -130,9 +130,9 @@
   },
   {
     "id": 13,
-    "title": "Jellyfish",
+    "title": "Manet",
     "price": 90,
-    "description": "Jellyfish. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Manet. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/jelly-fish-blue.jpg"],
     "category": "Djur",
     "rating": 4.7,
@@ -140,9 +140,9 @@
   },
   {
     "id": 14,
-    "title": "Cat",
+    "title": "Katt",
     "price": 90,
-    "description": "Cat. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Katt. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/cat-white.jpg"],
     "category": "Djur",
     "rating": 4.8,
@@ -150,9 +150,9 @@
   },
   {
     "id": 15,
-    "title": "Horse",
+    "title": "Häst",
     "price": 90,
-    "description": "Horse. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Häst. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
       "/cutiepoppers/products/horse-pink-2.jpeg",
       "/cutiepoppers/products/horse-pink.jpg"
@@ -163,9 +163,9 @@
   },
   {
     "id": 16,
-    "title": "Motorcycle",
+    "title": "Motorcykel",
     "price": 90,
-    "description": "Motorcycle. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Motorcykel. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/motorcycle-black.jpeg"],
     "category": "Transport",
     "rating": 4.6,
@@ -173,9 +173,9 @@
   },
   {
     "id": 17,
-    "title": "Coffee",
+    "title": "Kaffe",
     "price": 90,
-    "description": "Coffee. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Kaffe. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/coffee-black.jpg"],
     "category": "Livsstil",
     "rating": 4.8,
@@ -183,9 +183,9 @@
   },
   {
     "id": 18,
-    "title": "Headphones",
+    "title": "Hörlurar",
     "price": 90,
-    "description": "Headphones. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Hörlurar. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/headphones-pink.jpg"],
     "category": "Teknik",
     "rating": 4.5,
@@ -193,9 +193,9 @@
   },
   {
     "id": 19,
-    "title": "Mouse",
+    "title": "Mus",
     "price": 90,
-    "description": "Mouse. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Mus. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/mouse-white.jpg"],
     "category": "Teknik",
     "rating": 4.6,
@@ -203,9 +203,9 @@
   },
   {
     "id": 20,
-    "title": "Morning swimmer",
+    "title": "Morgonsimmare",
     "price": 90,
-    "description": "Morning swimmer. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Morgonsimmare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/morning-swims-white.jpg"],
     "category": "Sport",
     "rating": 4.7,
@@ -213,9 +213,9 @@
   },
   {
     "id": 21,
-    "title": "Over thinker",
+    "title": "Övertänkare",
     "price": 90,
-    "description": "Over thinker. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Övertänkare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/over-thinker-red.jpg"],
     "category": "Livsstil",
     "rating": 4.9,
@@ -225,7 +225,7 @@
     "id": 22,
     "title": "Språkpolis",
     "price": 90,
-    "description": "Språkpolis. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Språkpolis. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/sprak-polis-black.jpg"],
     "category": "Utbildning",
     "rating": 4.8,
@@ -233,9 +233,9 @@
   },
   {
     "id": 23,
-    "title": "Scissors",
+    "title": "Sax",
     "price": 90,
-    "description": "Scissors. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Sax. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": ["/cutiepoppers/products/scissors-pink.jpeg"],
     "category": "Verktyg",
     "rating": 4.5,
@@ -243,9 +243,9 @@
   },
   {
     "id": 24,
-    "title": "Trinity",
+    "title": "Treenighet",
     "price": 90,
-    "description": "Trinity. Size: 5 cm. Lightweight and stylish earrings made from eco-friendly PLA plastic using 3D printing. The hooks are made of copper with silver or gold finish, and are nickel-free, lead-free, and hypoallergenic – perfect for sensitive ears.",
+    "description": "Treenighet. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
       "/cutiepoppers/products/trinity-green.jpeg",
       "/cutiepoppers/products/trinity-white.jpg"
