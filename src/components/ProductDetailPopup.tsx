@@ -18,6 +18,7 @@ import {
   ArrowForwardIos,
 } from "@mui/icons-material";
 import { Product } from "../types/Product";
+import ContactInfo from "./ContactInfo";
 
 interface ProductDetailPopupProps {
   product: Product | null;
@@ -203,10 +204,7 @@ const ProductDetailPopup: React.FC<ProductDetailPopupProps> = ({
               </Typography>
 
               <Box sx={{ mt: "auto" }}>
-                <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.6 }}>
-                  För att beställa, vänligen kontakta oss via Instagram eller
-                  Facebok.
-                </Typography>
+                <ContactInfo />
                 {/* <Button
                   variant="contained"
                   size="large"
