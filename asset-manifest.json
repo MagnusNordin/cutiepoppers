@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/cutiepoppers/static/js/main.5ac33178.js",
-    "static/js/453.ab80ce3f.chunk.js": "/cutiepoppers/static/js/453.ab80ce3f.chunk.js",
-    "index.html": "/cutiepoppers/index.html",
-    "main.5ac33178.js.map": "/cutiepoppers/static/js/main.5ac33178.js.map",
-    "453.ab80ce3f.chunk.js.map": "/cutiepoppers/static/js/453.ab80ce3f.chunk.js.map"
+    "main.js": "/static/js/main.d16fccef.js",
+    "static/js/453.ab80ce3f.chunk.js": "/static/js/453.ab80ce3f.chunk.js",
+    "index.html": "/index.html",
+    "main.d16fccef.js.map": "/static/js/main.d16fccef.js.map",
+    "453.ab80ce3f.chunk.js.map": "/static/js/453.ab80ce3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5ac33178.js"
+    "static/js/main.d16fccef.js"
   ]
 }
