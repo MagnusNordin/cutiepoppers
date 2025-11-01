@@ -191,13 +191,25 @@ const ProductDetailPopup: React.FC<ProductDetailPopupProps> = ({
                 </Box>
               </Box> */}
 
-              <Typography
-                variant="h4"
-                // color="primary"
-                sx={{ fontWeight: "bold", mb: 2 }}
-              >
-                {product.price} SEK
-              </Typography>
+              <Box sx={{ mb: 2 }}>
+                <Typography
+                  variant="h5"
+                  sx={{ fontWeight: "bold", mb: 1 }}
+                >
+                  Priser
+                </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{ mb: 0.5 }}
+                >
+                  Örhänge: {product.priceEarrings} kr
+                </Typography>
+                <Typography
+                  variant="h6"
+                >
+                  Nyckelring: {product.priceKeychain} kr
+                </Typography>
+              </Box>
 
               <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.6 }}>
                 {product.description}

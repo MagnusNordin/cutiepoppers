@@ -76,13 +76,22 @@ const ProductGrid: React.FC<ProductGridProps> = ({
                   {product.title}
                 </Typography>
 
-                <Typography
-                  variant="h6"
-                  // color="primary"
-                  sx={{ fontWeight: "bold" }}
+                <Box
+                  sx={{ display: "flex", flexDirection: "column", gap: 0.5 }}
                 >
-                  {product.price} SEK
-                </Typography>
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "text.secondary", fontWeight: "bold" }}
+                  >
+                    Örhänge: {product.priceEarrings} kr
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "text.secondary", fontWeight: "bold" }}
+                  >
+                    Nyckelring: {product.priceKeychain} kr
+                  </Typography>
+                </Box>
               </CardContent>
             </CardActionArea>
           </Card>
