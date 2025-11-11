@@ -5,7 +5,10 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Badhytt. Storlek: ca 4 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/swim-hut-pink.jpeg", "/products/swim-hut-black.png"],
+    "images": [
+      "/products/swim-hut-pink.jpeg",
+      "/products/swim-hut-black.png"
+    ],
     "category": "Souvenir",
     "rating": 4.8,
     "inStock": true
@@ -30,7 +33,10 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Fotboll. Storlek: 3 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/football-pink.jpeg", "/products/football-black.png"],
+    "images": [
+      "/products/football-pink.jpeg",
+      "/products/football-black.png"
+    ],
     "category": "Sport",
     "rating": 4.6,
     "inStock": true
@@ -41,7 +47,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Gymnastik. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/gymnast.png"],
+    "images": [
+      "/products/gymnast.png"
+    ],
     "category": "Sport",
     "rating": 4.8,
     "inStock": true
@@ -52,7 +60,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "För alla som älskar Hjo. Storlek: ca 3 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/ilovehjo.png"],
+    "images": [
+      "/products/ilovehjo.png"
+    ],
     "category": "Souvenir",
     "rating": 4.9,
     "inStock": true
@@ -63,7 +73,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Bläckfisk. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/octopus-red.jpg"],
+    "images": [
+      "/products/octopus-red.jpg"
+    ],
     "category": "Djur",
     "rating": 4.7,
     "inStock": true
@@ -74,7 +86,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Kräfta. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/shrimp-red.jpg"],
+    "images": [
+      "/products/shrimp-red.jpg"
+    ],
     "category": "Djur",
     "rating": 4.6,
     "inStock": true
@@ -85,7 +99,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Ankare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/anchor-blue.jpg"],
+    "images": [
+      "/products/anchor-blue.jpg"
+    ],
     "category": "Maritim",
     "rating": 4.5,
     "inStock": true
@@ -96,7 +112,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Krabba. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/crab-red.jpg"],
+    "images": [
+      "/products/crab-red.jpg"
+    ],
     "category": "Djur",
     "rating": 4.7,
     "inStock": true
@@ -107,7 +125,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Segelbåt. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/sail-boat-blue.jpg"],
+    "images": [
+      "/products/sail-boat-blue.jpg"
+    ],
     "category": "Maritim",
     "rating": 4.8,
     "inStock": true
@@ -118,7 +138,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Hummer. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/lobster-red.jpg"],
+    "images": [
+      "/products/lobster-red.jpg"
+    ],
     "category": "Djur",
     "rating": 4.6,
     "inStock": true
@@ -129,7 +151,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Fyr. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/light-house-blue.jpg"],
+    "images": [
+      "/products/light-house-blue.jpg"
+    ],
     "category": "Maritim",
     "rating": 4.9,
     "inStock": true
@@ -140,7 +164,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Manet. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/jelly-fish-blue.jpg"],
+    "images": [
+      "/products/jelly-fish-blue.jpg"
+    ],
     "category": "Djur",
     "rating": 4.7,
     "inStock": true
@@ -151,7 +177,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Katt. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/cat-white.jpg"],
+    "images": [
+      "/products/cat-white.jpg"
+    ],
     "category": "Djur",
     "rating": 4.8,
     "inStock": true
@@ -162,7 +190,10 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Häst. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/horse-pink-2.jpeg", "/products/horse-pink.jpg"],
+    "images": [
+      "/products/horse-pink-2.jpeg",
+      "/products/horse-pink.jpg"
+    ],
     "category": "Djur",
     "rating": 4.9,
     "inStock": true
@@ -173,7 +204,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Motorcykel. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/motorcycle-black.jpeg"],
+    "images": [
+      "/products/motorcycle-black.jpeg"
+    ],
     "category": "Transport",
     "rating": 4.6,
     "inStock": true
@@ -184,7 +217,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Kaffe. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/coffee-black.jpg"],
+    "images": [
+      "/products/coffee-black.jpg"
+    ],
     "category": "Livsstil",
     "rating": 4.8,
     "inStock": true
@@ -195,7 +230,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Hörlurar. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/headphones-pink.jpg"],
+    "images": [
+      "/products/headphones-pink.jpg"
+    ],
     "category": "Teknik",
     "rating": 4.5,
     "inStock": true
@@ -206,7 +243,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Mus. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/mouse-white.jpg"],
+    "images": [
+      "/products/mouse-white.jpg"
+    ],
     "category": "Teknik",
     "rating": 4.6,
     "inStock": true
@@ -217,7 +256,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Morgonsimmare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/morning-swims-white.jpg"],
+    "images": [
+      "/products/morning-swims-white.jpg"
+    ],
     "category": "Sport",
     "rating": 4.7,
     "inStock": true
@@ -228,7 +269,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Övertänkare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/over-thinker-red.jpg"],
+    "images": [
+      "/products/over-thinker-red.jpg"
+    ],
     "category": "Livsstil",
     "rating": 4.9,
     "inStock": true
@@ -239,7 +282,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Språkpolis. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/sprak-polis-black.jpg"],
+    "images": [
+      "/products/sprak-polis-black.jpg"
+    ],
     "category": "Utbildning",
     "rating": 4.8,
     "inStock": true
@@ -250,7 +295,9 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Sax. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/scissors-pink.jpeg"],
+    "images": [
+      "/products/scissors-pink.jpeg"
+    ],
     "category": "Verktyg",
     "rating": 4.5,
     "inStock": true
@@ -261,9 +308,180 @@
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Treenighet. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": ["/products/trinity-green.jpeg", "/products/trinity-white.jpg"],
+    "images": [
+      "/products/trinity-green.jpeg",
+      "/products/trinity-white.jpg"
+    ],
     "category": "Symbolisk",
     "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-WOMAN",
+    "title": "Kvinnosymbol",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Örhängen med kvinnosymbol. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/woman.webp"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-PEACE",
+    "title": "Fred",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Fredstecken. Storlek: 4 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/peace-black.jpg",
+      "/products/peace-purple.jpeg"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-FLOORBALL",
+    "title": "Innebandy",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Örhängen med innebandyspelare. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/floorball.webp"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-LEOPARD",
+    "title": "Leopard",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Örhängen, leopardshuvud Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/leopard.webp"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-BASKETBALL-FILLED",
+    "title": "Basketboll ifylld",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Örhängen med basketboll. Den färg du väljer ersätter orange. Storlek: 4,5 cm Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/basketball-filled-orange.jpg"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-NO-PUPPET",
+    "title": "Ingen marionett",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Ingen marionett. Ta ingen skit från någon. Storlek: 4 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/no-puppet.webp"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-HANDBALL-SHOOTER",
+    "title": "Handbollsskytt",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Tjej som skjuter. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/handball-shooter.webp"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-BASKETBALL",
+    "title": "Basketboll",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Örhängen med basketboll. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/basketball-black.jpg",
+      "/products/basketball-black-2.jpg",
+      "/products/basketball-ball-black.jpg"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-BASKETBALL-SHOOTER",
+    "title": "Basketbollsskytt",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Tjej som skjuter. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/basketball-shooter-black.jpg",
+      "/products/basketball-shooter-black-2.jpg",
+      "/products/basketball-shooter-green.jpg",
+      "/products/basetkball-shooter-yellow.jpg"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-BASKETBALL-DRIBBLER",
+    "title": "Basketbollsdribblare",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Tjej som dribblar. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/basketball-dribbler-pink.jpg",
+      "/products/basketball-dribbler-pink-2.jpg",
+      "/products/basketball-dribbler-yellow.jpg",
+      "/products/basketball-dribble-pink-3.jpg"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-BASKETBALL-BOARD",
+    "title": "Basketboll",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Basketball. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/basketball-board.webp"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-HEART",
+    "title": "Hjärta",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Hjärtan. Storlek: 4 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/heart-blue.jpg",
+      "/products/heart-green.jpeg",
+      "/products/heart-orange.jpg",
+      "/products/heart-pink.jpg"
+    ],
+    "category": "",
+    "rating": 4.5,
     "inStock": true
   }
 ]
