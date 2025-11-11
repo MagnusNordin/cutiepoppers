@@ -456,19 +456,6 @@
     "inStock": true
   },
   {
-    "id": "EARRING-BASKETBALL-BOARD",
-    "title": "Basketboll",
-    "priceEarrings": 50,
-    "priceKeychain": 30,
-    "description": "Basketball. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
-    "images": [
-      "/products/basketball-board.webp"
-    ],
-    "category": "",
-    "rating": 4.5,
-    "inStock": true
-  },
-  {
     "id": "EARRING-HEART",
     "title": "Hjärta",
     "priceEarrings": 50,
