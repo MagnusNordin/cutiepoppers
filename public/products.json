@@ -409,15 +409,28 @@
     "inStock": true
   },
   {
-    "id": "EARRING-BASKETBALL",
+    "id": "EARRING-BASKETBALL-HOOP",
+    "title": "Basketbollkorg",
+    "priceEarrings": 50,
+    "priceKeychain": 30,
+    "description": "Örhängen med basketbollkorg. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
+    "images": [
+      "/products/basketball-black.jpg",
+      "/products/basketball-black-2.jpg"
+    ],
+    "category": "",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "EARRING-BASKETBALL-BALL",
     "title": "Basketboll",
     "priceEarrings": 50,
     "priceKeychain": 30,
     "description": "Örhängen med basketboll. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
-      "/products/basketball-black.jpg",
-      "/products/basketball-black-2.jpg",
-      "/products/basketball-ball-black.jpg"
+      "/products/basketball-ball-black.jpg",
+      "/products/basketball-ball-key-pink.jpg"
     ],
     "category": "",
     "rating": 4.5,
@@ -430,7 +443,6 @@
     "priceKeychain": 30,
     "description": "Tjej som skjuter. Storlek: 5 cm. Lätta och snygga örhängen tillverkade av miljövänlig PLA-plast med 3D-printing. Krokarna är gjorda av koppar med silver- eller guldfinish, och är nickelfria, blyfria och allergivänliga – perfekta för känsliga öron.",
     "images": [
-      "/products/basketball-shooter-black.jpg",
       "/products/basketball-shooter-black-2.jpg",
       "/products/basketball-shooter-green.jpg",
       "/products/basetkball-shooter-yellow.jpg"
