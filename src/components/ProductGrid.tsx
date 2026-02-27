@@ -56,7 +56,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({
                   flexShrink: 0,
                   borderRadius: "12px 12px 0 0",
                 }}
-                image={product.images[0]}
+                image={product.images[0].replace(/(\.[\w\d_-]+)$/i, '-thumb$1')}
                 alt={product.title}
               />
               <CardContent

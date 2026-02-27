@@ -166,7 +166,7 @@ const ProductDetailPopup: React.FC<ProductDetailPopupProps> = ({
                           height: "60px",
                           objectFit: "cover",
                         }}
-                        image={image}
+                        image={image.replace(/(\.[\w\d_-]+)$/i, '-thumb$1')}
                         alt={`Thumbnail ${index + 1}`}
                       />
                     </Card>
