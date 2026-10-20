@@ -91,7 +91,7 @@ eleventyComputed:
       </ul>
 
       <div class="buy-bar">
-        <button type="submit" class="btn btn--primary btn--block" data-add-button>Lägg i varukorgen · <span data-price>{{ site.kinds[0].priceOre | kr }}</span></button>
+        <button type="submit" class="btn btn--primary btn--block" data-add-button>Lägg i varukorgen · <span data-price-label>{{ site.kinds[0].priceOre | kr }}</span></button>
         <p class="added-status" role="status" data-added-status></p>
         <p class="note">Inget konto behövs. Du betalar med Swish när vi bekräftat.</p>
         <noscript><p class="note">Slå på JavaScript för att använda varukorgen, eller <a href="{{ site.instagram.dm }}">beställ via Instagram</a>.</p></noscript>

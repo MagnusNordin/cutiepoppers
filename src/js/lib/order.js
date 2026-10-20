@@ -22,7 +22,9 @@ export function describeKind(item) {
 
 /** Plain-text order for pasting into an Instagram DM. */
 export function formatOrderText(items) {
-  const lines = items.map((i) => `• ${i.name} – ${describeKind(i)} – ${describeOptions(i)} – ${formatKr(lineTotal(i))}`);
+  const lines = items.map(
+    (i) => `• ${i.name} – ${describeKind(i)} – ${describeOptions(i)} – ${formatKr(lineTotal(i))}`,
+  );
   return [
     "Hej! Jag vill beställa:",
     ...lines,

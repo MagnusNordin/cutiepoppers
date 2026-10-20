@@ -44,7 +44,7 @@ export function syncOptions(form, root = document) {
 
   const hookGroup = form.querySelector("[data-hook-group]");
   if (hookGroup) hookGroup.hidden = !isEarring;
-  const price = form.querySelector("[data-price]");
+  const price = form.querySelector("[data-price-label]");
   if (price && kindInput) price.textContent = formatKr(Number(kindInput.dataset.price));
   const colorName = form.querySelector("[data-color-name]");
   if (colorName && colorInput) colorName.textContent = colorInput.dataset.name;

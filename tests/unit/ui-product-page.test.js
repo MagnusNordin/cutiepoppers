@@ -23,13 +23,15 @@ function render() {
       <fieldset data-hook-group><span data-hook-name></span>
         ${radio("hook", "silver", 'data-name="Silver"', true)}${radio("hook", "guld", 'data-name="Guld"')}
       </fieldset>
-      <button type="submit">Lägg i varukorgen · <span data-price></span></button>
+      <button type="submit">Lägg i varukorgen · <span data-price-label></span></button>
       <p data-added-status></p>
     </form>`;
   return document.querySelector("form");
 }
 
 const choose = (name, value) => {
+  // happy-dom doesn't always uncheck the rest of a radio group; browsers do.
+  document.querySelectorAll(`input[name="${name}"]`).forEach((i) => (i.checked = false));
   const input = document.querySelector(`input[name="${name}"][value="${value}"]`);
   input.checked = true;
   input.dispatchEvent(new Event("change", { bubbles: true }));
@@ -83,7 +85,7 @@ describe("product options", () => {
 
   it("syncs price, names, tint and hook visibility", () => {
     syncOptions(form, document);
-    expect(form.querySelector("[data-price]").textContent).toBe("50 kr");
+    expect(form.querySelector("[data-price-label]").textContent).toBe("50 kr");
     expect(form.querySelector("[data-color-name]").textContent).toBe("Röd");
     expect(form.querySelector("[data-hook-name]").textContent).toBe("Silver");
     expect(document.querySelector("[data-gallery-main]").style.getPropertyValue("--tint")).toBe("#F9C9CC");
@@ -100,7 +102,7 @@ describe("product options", () => {
     initProductForm(document, createCart(memoryStorage()));
     choose("kind", "keyring");
     expect(form.querySelector("[data-hook-group]").hidden).toBe(true);
-    expect(form.querySelector("[data-price]").textContent).toBe("30 kr");
+    expect(form.querySelector("[data-price-label]").textContent).toBe("30 kr");
     choose("color", "bla");
     expect(form.querySelector("[data-color-name]").textContent).toBe("Blå");
     expect(umami.track).toHaveBeenCalledWith("select_color", { motif: "krabba", value: "bla" });
