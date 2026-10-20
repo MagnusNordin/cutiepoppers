@@ -1,4 +1,4 @@
-import { COLORS, HOOKS, KINDS } from "../js/lib/catalog.js";
+import { COLORS, HOOKS, KINDS, SHOP } from "../js/lib/catalog.js";
 
 const env = process.env.ELEVENTY_ENV || "development";
 
@@ -23,8 +23,8 @@ export default {
     dm: "https://ig.me/m/cutie.poppers",
   },
   facebook: { url: "https://www.facebook.com/people/Cutie-poppers/61575606763052/" },
-  dispatch: "3–4 arbetsdagar",
-  responseTime: "inom 1–2 dagar",
+  dispatch: SHOP.dispatch,
+  responseTime: SHOP.responseTime,
   shippingNote: "Frakten beräknas efter beställning",
   kinds: KINDS,
   colors: COLORS,

@@ -26,6 +26,9 @@ export const HOOKS = [
 
 export const DEFAULTS = { kind: "earring", color: "rod", hook: "silver" };
 
+/** Customer-facing promises, used on the site and in order e-mails. */
+export const SHOP = { responseTime: "inom 1–2 dagar", dispatch: "3–4 arbetsdagar" };
+
 export const MAX_QTY_PER_LINE = 20;
 export const MAX_LINES = 30;
 
