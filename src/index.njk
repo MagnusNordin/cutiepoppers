@@ -1,0 +1,98 @@
+---
+layout: layouts/base.njk
+fullTitle: "Cutie Poppers – 3D-printade örhängen och nyckelringar med personlighet"
+scripts: [grid-more]
+---
+<script type="application/ld+json">{{ site | organizationLd | jsonLd | safe }}</script>
+<script type="application/ld+json">{{ site | websiteLd | jsonLd | safe }}</script>
+{%- set all = products | sortProducts -%}
+{%- set activeCategory = "alla" -%}
+<section class="hero container">
+  <div class="hero__text">
+    <span class="pill">Handgjort i Sverige · 3D-printat</span>
+    <h1 class="hero__title">Örhängen med personlighet<span class="accent">★</span></h1>
+    <p class="hero__lead">Välj motiv, färg och krok. Vi printar dem åt dig — lätta som en fjäder och snälla mot känsliga öron.</p>
+    <div class="hero__prices">
+      <span class="price-pill price-pill--dark">Örhängen {{ site.kinds[0].priceOre | kr }}</span>
+      <span class="price-pill">Nyckelringar {{ site.kinds[1].priceOre | kr }}</span>
+    </div>
+    <a class="btn btn--primary hero__cta" href="#shop">Shoppa nu</a>
+  </div>
+  <div class="hero__media">
+    <div class="hero__collage">
+      {% productImage "over-thinker-red.jpg", "Övertänkare-örhängen i rött", { priority: true, sizes: "(min-width: 900px) 30vw, 60vw", widths: [640, 960] } %}
+      {% productImage "crab-red.jpg", "Krabba-örhängen i rött", { sizes: "(min-width: 900px) 15vw, 30vw", widths: [320, 640] } %}
+      {% productImage "heart-pink.jpg", "Hjärta-örhängen i rosa", { sizes: "(min-width: 900px) 15vw, 30vw", widths: [320, 640] } %}
+    </div>
+    <div class="hero__badge" aria-hidden="true"><span class="hero__badge-price">50 kr</span><span>per par</span></div>
+  </div>
+</section>
+
+<section class="container trust" aria-label="Därför Cutie Poppers">
+  <ul class="trust__list">
+    {%- for t in ["Nickelfria krokar", "10 färger", "Guld eller silver"] %}
+    <li class="trust__item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>
+      {{ t }}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section id="shop" class="shop" aria-labelledby="shop-title">
+  <div class="container">
+    <h2 id="shop-title" class="section-title">Hitta din vibe</h2>
+  </div>
+  <div class="container chips-wrap">{% include "partials/category-chips.njk" %}</div>
+  <div class="container">
+    <p class="shop__count">Alla · {{ all.length | motifs }}</p>
+    <ul class="product-grid" data-grid>
+      {%- asyncEach p in all %}
+      {%- set cardIndex = loop.index0 %}
+      {%- set cardExtra = loop.index > site.gridInitial %}
+      {% include "partials/product-card.njk" %}
+      {%- endeach %}
+    </ul>
+    <button type="button" class="btn btn--outline btn--block" data-grid-more hidden>Visa alla {{ all.length | motifs }}</button>
+  </div>
+</section>
+
+<section class="explainer" aria-labelledby="explainer-title">
+  <div class="container explainer__inner">
+    <div>
+      <h2 id="explainer-title" class="explainer__title">Din färg.<br>Din krok.</h2>
+      <p class="explainer__text">Varje par printas när du beställer. Välj bland tio färger och silver- eller guldfärgad krok — nickelfri och blyfri.</p>
+    </div>
+    <div>
+      <ul class="swatch-list">
+        {%- for c in site.colors %}
+        <li><span class="swatch-dot" style="--dot: {{ c.hex }}" aria-hidden="true"></span>{{ c.name }}</li>
+        {%- endfor %}
+      </ul>
+      <div class="hook-pills">
+        <span class="hook-pill hook-pill--silver">Silver</span>
+        <span class="hook-pill hook-pill--guld">Guld</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- set marint = products | inCategory("marint") %}
+<section class="collection" aria-labelledby="collection-title">
+  <div class="container collection__head">
+    <h2 id="collection-title" class="section-title section-title--small">Marint</h2>
+    <a href="/kategori/marint/#shop">Se alla {{ marint.length }}</a>
+  </div>
+  <ul class="carousel container">
+    {%- asyncEach p in marint %}
+    <li class="carousel__item">
+      <a href="/motiv/{{ p.slug }}/">
+        <div class="carousel__media" style="--tint: {{ loop.index0 | tint }}">
+          {% productImage p.images[0].src, p.images[0].alt, { sizes: "160px", widths: [320] } %}
+        </div>
+        <span class="carousel__name">{{ p.name }}</span>
+      </a>
+    </li>
+    {%- endeach %}
+  </ul>
+</section>

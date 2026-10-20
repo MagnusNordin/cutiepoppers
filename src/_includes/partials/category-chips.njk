@@ -1,0 +1,7 @@
+{#- expects: activeCategory ("alla" or a category slug) -#}
+<nav class="chips" aria-label="Kategorier">
+  <a class="chip" href="/#shop"{% if activeCategory == "alla" %} aria-current="page"{% endif %}>Alla</a>
+  {%- for c in categories %}
+  <a class="chip" href="/kategori/{{ c.slug }}/#shop" data-track="filter_category" data-track-category="{{ c.slug }}"{% if activeCategory == c.slug %} aria-current="page"{% endif %}>{{ c.name }}</a>
+  {%- endfor %}
+</nav>

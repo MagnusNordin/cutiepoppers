@@ -1,0 +1,12 @@
+_site/
+coverage/
+node_modules/
+.wrangler/
+.cache/
+playwright-report/
+test-results/
+package-lock.json
+*.njk
+*.md
+src/images/
+src/static/

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "statement",
+    "name": "Statement",
+    "title": "Statement-örhängen",
+    "intro": "Örhängen som säger något. Symboler, ställningstaganden och en gnutta självironi — 3D-printade i den färg du väljer."
+  },
+  {
+    "slug": "marint",
+    "name": "Marint",
+    "title": "Marina örhängen",
+    "intro": "Krabbor, hummer, fyrar och segelbåtar. Marina örhängen och nyckelringar för alla som längtar till havet och bryggan."
+  },
+  {
+    "slug": "sport",
+    "name": "Sport",
+    "title": "Sportörhängen",
+    "intro": "Fotboll, basket, handboll, innebandy och gymnastik. Sportörhängen för spelare, tränare och supportrar på läktaren."
+  },
+  {
+    "slug": "djur",
+    "name": "Djur",
+    "title": "Örhängen med djur",
+    "intro": "Katter, hästar, leoparder och havets invånare. Lekfulla djurörhängen som väger nästan ingenting."
+  },
+  {
+    "slug": "vardag",
+    "name": "Vardag",
+    "title": "Vardagsörhängen",
+    "intro": "Kaffe, hörlurar, saxar och motorcyklar. Små motiv från vardagen som gör den lite roligare."
+  },
+  {
+    "slug": "souvenir",
+    "name": "Souvenir",
+    "title": "Souvenirer från Hjo",
+    "intro": "Souvenirer från Hjo: den karakteristiska badhytten och ett hjärta för trästaden vid Vättern. Ett minne att bära med sig hem."
+  }
+]
