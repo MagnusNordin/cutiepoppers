@@ -1,0 +1,3 @@
+# Old URLs and renamed product slugs (301 = permanent).
+# Format: /old-path /new-path 301
+/products.json / 301

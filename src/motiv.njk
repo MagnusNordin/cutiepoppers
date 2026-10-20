@@ -1,0 +1,112 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: products
+  size: 1
+  alias: product
+  addAllPagesToCollections: true
+permalink: "/motiv/{{ product.slug }}/"
+scripts: [product-page]
+ogType: product
+eleventyComputed:
+  title: "{{ product | productTitle }}"
+  description: "{{ product | productDescription }}"
+  ogSlug: "{{ product.slug }}"
+  ogSource: "{{ product.images[0].src }}"
+---
+{%- set primary = categories | category(product.categories[0]) -%}
+{%- set crumbs = [{ name: "Start", url: "/" }, { name: primary.name, url: "/kategori/" + primary.slug + "/" }, { name: product.name, url: page.url }] -%}
+<script type="application/ld+json">{{ product | productLd(site) | jsonLd | safe }}</script>
+<script type="application/ld+json">{{ crumbs | breadcrumbLd(site) | jsonLd | safe }}</script>
+{% include "partials/breadcrumbs.njk" %}
+
+<div class="container product">
+  <div class="product__gallery" data-gallery>
+    <div class="gallery__main" data-gallery-main>
+      {%- for img in product.images %}
+      {%- set isFirst = loop.first %}
+      <div data-gallery-image="{{ loop.index0 }}"{% if not isFirst %} hidden{% endif %}>
+        {% productImage img.src, img.alt, { priority: isFirst, sizes: "(min-width: 900px) 560px, 100vw", widths: [640, 960, 1280] } %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- if product.images.length > 1 %}
+    <div class="gallery__thumbs" role="group" aria-label="Fler bilder">
+      {%- for img in product.images %}
+      <button type="button" class="gallery__thumb" data-gallery-thumb="{{ loop.index0 }}" aria-label="Visa bild {{ loop.index }} av {{ product.images.length }}"{% if loop.first %} aria-current="true"{% endif %}>
+        {% productImage img.src, "", { sizes: "100px", widths: [320] } %}
+      </button>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+
+  <div class="product__info">
+    <h1 class="product__title">{{ product.name }}</h1>
+    <p class="product__size">{{ product.sizeCm | size }} · väger nästan ingenting</p>
+    <p class="product__description">{{ product.description }}</p>
+
+    <form class="options" data-product-form data-slug="{{ product.slug }}" data-name="{{ product.name }}" data-image="{% thumbUrl product.images[0].src %}">
+      <fieldset>
+        <legend>Välj</legend>
+        <div class="kind-options">
+          {%- for k in site.kinds %}
+          <input class="option-input" type="radio" name="kind" id="kind-{{ k.id }}" value="{{ k.id }}" data-price="{{ k.priceOre }}"{% if loop.first %} checked{% endif %}>
+          <label class="kind-option" for="kind-{{ k.id }}">{{ k.label }} <small>{{ k.priceOre | kr }}{% if k.unit == "par" %} / par{% endif %}</small></label>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Färg: <span data-color-name>Röd</span></legend>
+        <div class="swatches">
+          {%- for c in site.colors %}
+          <span>
+            <input class="option-input" type="radio" name="color" id="color-{{ c.id }}" value="{{ c.id }}" data-name="{{ c.name }}" data-pale="{{ c.pale }}"{% if c.id == "rod" %} checked{% endif %}>
+            <label class="swatch" for="color-{{ c.id }}" style="--swatch: {{ c.hex }}"><span class="visually-hidden">{{ c.name }}</span></label>
+          </span>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <fieldset class="hook-group" data-hook-group>
+        <legend>Krok: <span data-hook-name>Silver</span></legend>
+        <div class="hook-options">
+          {%- for h in site.hooks %}
+          <span>
+            <input class="option-input" type="radio" name="hook" id="hook-{{ h.id }}" value="{{ h.id }}" data-name="{{ h.name }}"{% if loop.first %} checked{% endif %}>
+            <label class="hook-option hook-option--{{ h.id }}" for="hook-{{ h.id }}">{{ h.name }}</label>
+          </span>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <ul class="card facts">
+        {%- for f in ["Nickelfri och blyfri krok i koppar med silver- eller guldfinish — snäll mot känsliga öron", "Printad i PLA, en växtbaserad plast — lätt som en fjäder", "Printas när du beställer · skickas inom " + site.dispatch] %}
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>
+          <span>{{ f }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+
+      <div class="buy-bar">
+        <button type="submit" class="btn btn--primary btn--block" data-add-button>Lägg i varukorgen · <span data-price>{{ site.kinds[0].priceOre | kr }}</span></button>
+        <p class="added-status" role="status" data-added-status></p>
+        <p class="note">Inget konto behövs. Du betalar med Swish när vi bekräftat.</p>
+        <noscript><p class="note">Slå på JavaScript för att använda varukorgen, eller <a href="{{ site.instagram.dm }}">beställ via Instagram</a>.</p></noscript>
+      </div>
+    </form>
+  </div>
+</div>
+
+<section class="container related" aria-labelledby="related-title">
+  <h2 id="related-title" class="section-title section-title--small">Fler motiv i {{ primary.name }}</h2>
+  <ul class="product-grid">
+    {%- asyncEach p in product | related(products, 4) %}
+    {%- set cardIndex = loop.index0 %}
+    {%- set cardExtra = false %}
+    {% include "partials/product-card.njk" %}
+    {%- endeach %}
+  </ul>
+</section>

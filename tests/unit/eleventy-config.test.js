@@ -44,7 +44,7 @@ describe("eleventy config", () => {
     expect(cfg.calls.filters.kr(5000)).toBe("50 kr");
     expect(cfg.calls.filters.absoluteUrl("/a/", "https://x.se")).toBe("https://x.se/a/");
     expect(cfg.calls.globals.dots().dots).toHaveLength(5);
-    expect(Object.keys(cfg.calls.shortcodes)).toEqual(["productImage", "ogImage"]);
+    expect(Object.keys(cfg.calls.shortcodes)).toEqual(["productImage", "ogImage", "thumbUrl"]);
   });
 
   it("builds product JSON-LD with absolute image URLs", async () => {

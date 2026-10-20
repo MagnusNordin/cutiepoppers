@@ -49,6 +49,12 @@ export async function largestJpegUrl(file) {
   return jpegs[jpegs.length - 1].url;
 }
 
+/** URL of a small JPEG rendition, for the cart (stored with the cart line). */
+export async function thumbUrl(file) {
+  const metadata = await imageMetadata(file, [320]);
+  return metadata.jpeg[0].url;
+}
+
 /** 1200×630 social share image: product photo on the brand pink with an ink frame. */
 export async function ogImage(slug, file) {
   const rel = `/og/${slug}.jpg`;

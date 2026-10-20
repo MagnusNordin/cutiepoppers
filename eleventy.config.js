@@ -4,7 +4,7 @@ import path from "node:path";
 import { formatKr, formatSize, pluralMotifs } from "./src/js/lib/format.js";
 import * as catalog from "./config/catalog.js";
 import * as seo from "./config/seo.js";
-import { largestJpegUrl, ogImage, productImageHtml } from "./config/images.js";
+import { largestJpegUrl, ogImage, productImageHtml, thumbUrl } from "./config/images.js";
 
 const FONTS = {
   "anton-400.woff2": "@fontsource/anton/files/anton-latin-400-normal.woff2",
@@ -79,6 +79,7 @@ export default function (eleventyConfig) {
   // Images
   eleventyConfig.addAsyncShortcode("productImage", (file, alt, opts) => productImageHtml(file, alt, opts || {}));
   eleventyConfig.addAsyncShortcode("ogImage", (slug, file) => ogImage(slug, file));
+  eleventyConfig.addAsyncShortcode("thumbUrl", (file) => thumbUrl(file));
 
   return {
     dir: { input: "src", includes: "_includes", data: "_data", output: "_site" },

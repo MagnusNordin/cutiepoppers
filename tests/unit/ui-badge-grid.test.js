@@ -2,7 +2,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { createCart } from "../../src/js/lib/cart.js";
 import { memoryStorage } from "../../src/js/lib/storage.js";
-import { initCartBadge, renderBadge } from "../../src/js/ui/cart-badge.js";
+import { initCartBadge, renderBadge } from "../../src/js/ui/common.js";
 import { initGridMore } from "../../src/js/ui/grid-more.js";
 import { getCart, resetCart } from "../../src/js/ui/shared.js";
 

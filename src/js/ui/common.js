@@ -1,3 +1,4 @@
+import { bindTrackedLinks } from "../lib/analytics.js";
 import { pluralItems } from "../lib/format.js";
 import { getCart } from "./shared.js";
 
@@ -20,5 +21,8 @@ export function initCartBadge(root = document, cart = getCart()) {
   return cart.subscribe(update);
 }
 
-/* c8 ignore next */
-if (typeof document !== "undefined" && !globalThis.__CP_TEST__) initCartBadge();
+/* c8 ignore next 4 */
+if (typeof document !== "undefined" && !globalThis.__CP_TEST__) {
+  initCartBadge();
+  bindTrackedLinks(document);
+}

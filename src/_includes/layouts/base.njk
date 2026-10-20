@@ -29,7 +29,7 @@
 {%- if site.isProduction %}
 <script defer src="{{ site.umami.src }}" data-website-id="{{ site.umami.websiteId }}" data-domains="{{ site.umami.domains }}"></script>
 {%- endif %}
-<script type="module" src="{{ assetBase }}/js/ui/cart-badge.js"></script>
+<script type="module" src="{{ assetBase }}/js/ui/common.js"></script>
 {%- for s in scripts %}
 <script type="module" src="{{ assetBase }}/js/ui/{{ s }}.js"></script>
 {%- endfor %}
