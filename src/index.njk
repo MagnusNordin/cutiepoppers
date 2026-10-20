@@ -10,7 +10,7 @@ scripts: [grid-more]
 <section class="hero container">
   <div class="hero__text">
     <span class="pill">Handgjort i Sverige · 3D-printat</span>
-    <h1 class="hero__title">Örhängen med personlighet<span class="accent">★</span></h1>
+    <h1 class="hero__title">Örhängen med <span class="nowrap">personlighet<span class="accent">★</span></span></h1>
     <p class="hero__lead">Välj motiv, färg och krok. Vi printar dem åt dig — lätta som en fjäder och snälla mot känsliga öron.</p>
     <div class="hero__prices">
       <span class="price-pill price-pill--dark">Örhängen {{ site.kinds[0].priceOre | kr }}</span>
@@ -20,9 +20,9 @@ scripts: [grid-more]
   </div>
   <div class="hero__media">
     <div class="hero__collage">
-      {% productImage "over-thinker-red.jpg", "Övertänkare-örhängen i rött", { priority: true, sizes: "(min-width: 900px) 30vw, 60vw", widths: [640, 960] } %}
-      {% productImage "crab-red.jpg", "Krabba-örhängen i rött", { sizes: "(min-width: 900px) 15vw, 30vw", widths: [320, 640] } %}
-      {% productImage "heart-pink.jpg", "Hjärta-örhängen i rosa", { sizes: "(min-width: 900px) 15vw, 30vw", widths: [320, 640] } %}
+      {% productImage "over-thinker-red.jpg", "Övertänkare-örhängen i rött", { priority: true, sizes: "(min-width: 900px) 30vw, 60vw", widths: [320, 480, 720] } %}
+      {% productImage "crab-red.jpg", "Krabba-örhängen i rött", { sizes: "(min-width: 900px) 15vw, 30vw", widths: [320, 480] } %}
+      {% productImage "heart-pink.jpg", "Hjärta-örhängen i rosa", { sizes: "(min-width: 900px) 15vw, 30vw", widths: [320, 480] } %}
     </div>
     <div class="hero__badge" aria-hidden="true"><span class="hero__badge-price">50 kr</span><span>per par</span></div>
   </div>

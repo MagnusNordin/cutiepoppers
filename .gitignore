@@ -9,3 +9,5 @@ playwright-report/
 .DS_Store
 ._*
 npm-debug.log*
+lighthouse-report/
+.lighthouseci/

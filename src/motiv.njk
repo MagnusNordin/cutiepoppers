@@ -15,7 +15,7 @@ eleventyComputed:
   ogSource: "{{ product.images[0].src }}"
 ---
 {%- set primary = categories | category(product.categories[0]) -%}
-{%- set crumbs = [{ name: "Start", url: "/" }, { name: primary.name, url: "/kategori/" + primary.slug + "/" }, { name: product.name, url: page.url }] -%}
+{%- set crumbs = [{ name: "Startsida", url: "/" }, { name: primary.name, url: "/kategori/" + primary.slug + "/" }, { name: product.name, url: page.url }] -%}
 <script type="application/ld+json">{{ product | productLd(site) | jsonLd | safe }}</script>
 <script type="application/ld+json">{{ crumbs | breadcrumbLd(site) | jsonLd | safe }}</script>
 {% include "partials/breadcrumbs.njk" %}
@@ -26,7 +26,7 @@ eleventyComputed:
       {%- for img in product.images %}
       {%- set isFirst = loop.first %}
       <div data-gallery-image="{{ loop.index0 }}"{% if not isFirst %} hidden{% endif %}>
-        {% productImage img.src, img.alt, { priority: isFirst, sizes: "(min-width: 900px) 560px, 100vw", widths: [640, 960, 1280] } %}
+        {% productImage img.src, img.alt, { priority: isFirst, sizes: "(min-width: 900px) 560px, calc(100vw - 32px)", widths: [480, 720, 960] } %}
       </div>
       {%- endfor %}
     </div>

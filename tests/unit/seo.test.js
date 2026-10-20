@@ -67,7 +67,7 @@ describe("JSON-LD", () => {
   it("builds breadcrumbs and item lists", () => {
     const bc = seo.breadcrumbLd(
       [
-        { name: "Start", url: "/" },
+        { name: "Startsida", url: "/" },
         { name: "Krabba", url: "/motiv/krabba/" },
       ],
       site,

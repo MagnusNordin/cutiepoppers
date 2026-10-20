@@ -1,0 +1,33 @@
+---
+permalink: /merchant-feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+<title>{{ site.name }}</title>
+<link>{{ site.url }}/</link>
+<description>{{ site.description }}</description>
+{%- asyncEach p in products | sortProducts %}
+{%- set imageUrl = p.images[0].src | imageUrl(site.url) %}
+{%- for k in site.kinds %}
+<item>
+  <g:id>{{ p.slug }}-{{ k.id }}</g:id>
+  <g:item_group_id>{{ p.slug }}</g:item_group_id>
+  <g:title>{{ p.name }} – {{ "3D-printade örhängen" if k.id == "earring" else "3D-printad nyckelring" }}</g:title>
+  <g:description>{{ p.description }}</g:description>
+  <g:link>{{ site.url }}/motiv/{{ p.slug }}/</g:link>
+  <g:image_link>{{ imageUrl }}</g:image_link>
+  <g:availability>{{ "in_stock" if p.inStock else "out_of_stock" }}</g:availability>
+  <g:price>{{ k.priceOre | feedPrice }}</g:price>
+  <g:condition>new</g:condition>
+  <g:brand>{{ site.name }}</g:brand>
+  <g:identifier_exists>no</g:identifier_exists>
+  <g:google_product_category>{{ "Apparel & Accessories > Jewelry > Earrings" if k.id == "earring" else "Apparel & Accessories > Handbag & Wallet Accessories > Keychains" }}</g:google_product_category>
+  <g:material>PLA</g:material>
+  <g:size>{{ p.sizeCm }} cm</g:size>
+</item>
+{%- endfor %}
+{%- endeach %}
+</channel>
+</rss>

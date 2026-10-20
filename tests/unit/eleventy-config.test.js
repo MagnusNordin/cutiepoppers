@@ -44,6 +44,7 @@ describe("eleventy config", () => {
     expect(cfg.calls.filters.kr(5000)).toBe("50 kr");
     expect(cfg.calls.filters.absoluteUrl("/a/", "https://x.se")).toBe("https://x.se/a/");
     expect(cfg.calls.globals.dots().dots).toHaveLength(5);
+    expect(cfg.calls.filters.feedPrice(5000)).toBe("50.00 SEK");
     expect(Object.keys(cfg.calls.shortcodes)).toEqual(["productImage", "ogImage", "thumbUrl"]);
   });
 
@@ -56,6 +57,14 @@ describe("eleventy config", () => {
       site,
     );
     expect(ld.image[0]).toMatch(/^https:\/\/cutiepoppers\.shop\/img\//);
+  });
+
+  it("resolves absolute image URLs", async () => {
+    const cfg = fakeConfig();
+    configure(cfg);
+    expect(await cfg.calls.asyncFilters.imageUrl("swim-hut-black.png", "https://x.se")).toMatch(
+      /^https:\/\/x\.se\/img\//,
+    );
   });
 
   it("wires the image shortcodes", async () => {

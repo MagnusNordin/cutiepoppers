@@ -14,7 +14,7 @@ eleventyComputed:
 ---
 {%- set list = products | inCategory(cat.slug) -%}
 {%- set activeCategory = cat.slug -%}
-{%- set crumbs = [{ name: "Start", url: "/" }, { name: cat.name, url: page.url }] -%}
+{%- set crumbs = [{ name: "Startsida", url: "/" }, { name: cat.name, url: page.url }] -%}
 <script type="application/ld+json">{{ crumbs | breadcrumbLd(site) | jsonLd | safe }}</script>
 <script type="application/ld+json">{{ list | itemListLd(site, cat.title) | jsonLd | safe }}</script>
 {% include "partials/breadcrumbs.njk" %}

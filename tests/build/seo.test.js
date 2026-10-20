@@ -144,3 +144,23 @@ describe("sitemap and robots", () => {
     expect(isNoindex(byUrl("/404.html").doc)).toBe(true);
   });
 });
+
+describe("Google Merchant feed", () => {
+  const feed = fs.readFileSync(path.join(SITE, "merchant-feed.xml"), "utf8");
+  const items = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
+  const tag = (item, name) => item.match(new RegExp(`<g:${name}>([^<]*)</g:${name}>`))[1];
+
+  it("has an earring and a keyring item per product", () => {
+    expect(items).toHaveLength(products.length * 2);
+    expect(new Set(items.map((i) => tag(i, "id"))).size).toBe(items.length);
+  });
+
+  it("has prices in SEK, absolute links and existing images", () => {
+    for (const item of items) {
+      expect(tag(item, "price")).toMatch(/^(50|30)\.00 SEK$/);
+      expect(tag(item, "link")).toMatch(new RegExp(`^${ORIGIN}/motiv/[a-z0-9-]+/$`));
+      const image = tag(item, "image_link");
+      expect(existsInSite(new URL(image).pathname), image).toBe(true);
+    }
+  });
+});

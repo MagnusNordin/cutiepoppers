@@ -76,6 +76,9 @@ export default function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addAsyncFilter("imageUrl", async (file, base) => seo.absoluteUrl(await largestJpegUrl(file), base));
+  eleventyConfig.addFilter("feedPrice", (ore) => `${(ore / 100).toFixed(2)} SEK`);
+
   // Images
   eleventyConfig.addAsyncShortcode("productImage", (file, alt, opts) => productImageHtml(file, alt, opts || {}));
   eleventyConfig.addAsyncShortcode("ogImage", (slug, file) => ogImage(slug, file));

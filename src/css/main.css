@@ -765,8 +765,7 @@
   .hero__title {
     font-family: var(--font-display);
     font-weight: 400;
-    font-size: clamp(44px, 13vw, 96px);
-    overflow-wrap: anywhere;
+    font-size: clamp(44px, 12.5vw, 96px);
     line-height: 0.92;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -1538,6 +1537,10 @@
 }
 
 @layer utilities {
+  .nowrap {
+    white-space: nowrap;
+  }
+
   .visually-hidden {
     position: absolute;
     width: 1px;

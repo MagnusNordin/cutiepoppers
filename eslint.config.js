@@ -2,7 +2,19 @@ import js from "@eslint/js";
 import globals from "globals";
 
 export default [
-  { ignores: ["_site/", "coverage/", "node_modules/", ".wrangler/", "playwright-report/", "test-results/", ".cache/"] },
+  {
+    ignores: [
+      ".lighthouseci/",
+      "lighthouse-report/",
+      "_site/",
+      "coverage/",
+      "node_modules/",
+      ".wrangler/",
+      "playwright-report/",
+      "test-results/",
+      ".cache/",
+    ],
+  },
   js.configs.recommended,
   {
     languageOptions: {

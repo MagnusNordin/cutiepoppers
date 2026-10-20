@@ -9,12 +9,13 @@ export const OUT_DIR = "_site";
 const BACKGROUND = "#FDEEFA";
 
 export const imageOptions = {
-  widths: [320, 640, 960, 1280],
-  formats: ["webp", "jpeg"],
+  widths: [320, 480, 720, 960],
+  formats: ["avif", "webp", "jpeg"],
   outputDir: path.join(OUT_DIR, "img"),
   urlPath: "/img/",
-  sharpWebpOptions: { quality: 78 },
-  sharpJpegOptions: { quality: 80, mozjpeg: true },
+  sharpAvifOptions: { quality: 50 },
+  sharpWebpOptions: { quality: 62 },
+  sharpJpegOptions: { quality: 72, mozjpeg: true },
   // Transparent PNG/WebP cut-outs get the brand's pale pink instead of black.
   transform: (s) => s.rotate().flatten({ background: BACKGROUND }),
 };

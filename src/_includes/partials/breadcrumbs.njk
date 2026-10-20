@@ -1,8 +1,0 @@
-{#- expects: crumbs [{ name, url }] — the last one is the current page -#}
-<nav class="breadcrumbs container" aria-label="Brödsmulor">
-  <ol>
-    {%- for c in crumbs %}
-    <li>{% if loop.last %}<span aria-current="page">{{ c.name }}</span>{% else %}<a href="{{ c.url }}">{{ c.name }}</a>{% endif %}</li>
-    {%- endfor %}
-  </ol>
-</nav>
