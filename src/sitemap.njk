@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 {%- if not entry.data.noindex and entry.url %}
   <url>
     <loc>{{ entry.url | absoluteUrl(site.url) }}</loc>
-    <lastmod>{{ site.buildTime | truncate(10, "") }}</lastmod>
+    <lastmod>{{ site.buildTime.slice(0, 10) }}</lastmod>
   </url>
 {%- endif %}
 {%- endfor %}
