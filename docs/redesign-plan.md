@@ -326,9 +326,16 @@ Implemented on branch `redesign`, one commit per phase. Where it differs from th
 - **Category chips are links, not in-place filters.** Each chip opens its static category page. This is simpler, every filter is crawlable, and it works without JS.
 - **Worker tests use plain Vitest**, with `fetch`, time and randomness injected, instead of `@cloudflare/vitest-pool-workers`. The e2e tests still run full orders through the real Worker in `wrangler dev`, with e-mail in dry-run mode and Turnstile test keys.
 - **Images:** AVIF + WebP + JPEG with widths 320–960. The first build takes ~3–4 minutes; CI caches `_site/img`.
-- **Customer confirmation e-mails are off** (`SEND_CUSTOMER_CONFIRMATION=false`) until `cutiepoppers.shop` is verified in Resend after the DNS move. Orders to the owner are sent from `onboarding@resend.dev`.
+- **E-mail sender:** orders and customer confirmations are sent from `Cutie Poppers <hej@cutiepoppers.shop>` (`SEND_CUSTOMER_CONFIRMATION=true`) since the domain was verified in Resend on 2026-10-21.
 - **Returns:** the köpvillkor give a plain 14-day ångerrätt, the simplest safe default, plus "fel på varan? vi ersätter den".
 - **Merchant Center feed** at `/merchant-feed.xml`.
 - **Lighthouse (mobile, local):** performance 94–100; accessibility, best practices and SEO 100.
 
-Still to do, together with the owner (§8.5): the DNS move, Email Routing for `hej@`, Resend domain verification (then set `EMAIL_FROM` to `Cutie Poppers <hej@cutiepoppers.shop>` and `SEND_CUSTOMER_CONFIRMATION=true`), custom domains on the Worker, Cloudflare Web Analytics, Search Console/Bing/Merchant Center, and retiring GitHub Pages.
+### Migration done (2026-10-21, §8.5)
+
+- **DNS on Cloudflare:** zone `cutiepoppers.shop` (Free), nameservers `clara`/`lewis.ns.cloudflare.com`, active since 14:39. one.com's DNSSEC turned itself off with the nameserver change; switching cost about 7 minutes of downtime because the Cloudflare zone was stuck in onboarding until "Check nameservers now" was clicked. DNSSEC is off for now and can be turned on in Cloudflare.
+- **Email Routing:** `hej@cutiepoppers.shop` forwards to the owner's Gmail (Cloudflare MX, SPF, DKIM).
+- **Resend:** domain verified (EU, eu-west-1). Records, all DNS only: TXT `resend._domainkey`, CNAME `rsend` → `rsend-euw1.forge.rmta.net`, CNAME `send` → `send.forge.rmta.net`, TXT `_dmarc` `v=DMARC1; p=none; rua=mailto:hej@cutiepoppers.shop`. Resend's inbound MX was **not** added, because it would take over hej@ from Email Routing.
+- **Live on the Worker:** custom domains `cutiepoppers.shop` and `www.cutiepoppers.shop`; redirect rule www → root (301, keeps path and query); Always Use HTTPS on; Cloudflare Web Analytics with automatic injection; the Turnstile widget already listed `cutiepoppers.shop`. A real test order delivered both the order e-mail and the customer confirmation.
+- **GitHub Pages retired:** the `gh-pages` branch (last tip `a9d49cf`) and `github-pages` environment are deleted; the repo has no Pages site.
+- **Search:** Google Search Console Domain property verified (TXT via Cloudflare Domain Connect) and `https://cutiepoppers.shop/sitemap.xml` submitted, after fixing invalid `<lastmod>` dates. Bing Webmaster Tools imported the site from Search Console, and the sitemap was submitted there too. Merchant Center (feed at `/merchant-feed.xml`) is left for later.
