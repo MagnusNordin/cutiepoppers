@@ -14,10 +14,9 @@
   },
   "observability": { "enabled": true },
   "vars": {
-    "EMAIL_FROM": "Cutie Poppers <onboarding@resend.dev>",
+    "EMAIL_FROM": "Cutie Poppers <hej@cutiepoppers.shop>",
     "REPLY_TO": "hej@cutiepoppers.shop",
-    // Turn on once cutiepoppers.shop is verified in Resend (after the DNS move).
-    "SEND_CUSTOMER_CONFIRMATION": "false",
+    "SEND_CUSTOMER_CONFIRMATION": "true",
     "EMAIL_DRY_RUN": "false",
   },
   "ratelimits": [{ "name": "ORDER_LIMITER", "namespace_id": "1001", "simple": { "limit": 20, "period": 60 } }],
