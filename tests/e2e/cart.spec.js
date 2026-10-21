@@ -88,3 +88,15 @@ test.describe("cart", () => {
     expect(text.replace(/\u00a0/g, " ")).toContain("Hummer – Örhängen – Orange · silverkrok – 50 kr");
   });
 });
+
+test.describe("gallery", () => {
+  test("every image fits inside the square frame, drawings included", async ({ page }) => {
+    await page.goto("/motiv/badhytt/");
+    await page.getByRole("button", { name: "Visa bild 2 av 2" }).click();
+    const frame = await page.locator("[data-gallery-main]").boundingBox();
+    const img = await page.locator('[data-gallery-image="1"] img').boundingBox();
+    expect(Math.round(frame.width)).toBe(Math.round(frame.height));
+    expect(img.height).toBeLessThanOrEqual(frame.height);
+    await expect(page.locator('[data-gallery-image="1"] img')).toHaveCSS("object-fit", "contain");
+  });
+});

@@ -78,6 +78,11 @@
     max-width: 100%;
   }
 
+  picture {
+    width: 100%;
+    height: 100%;
+  }
+
   input,
   button,
   textarea,
@@ -217,34 +222,20 @@
   }
 
   .site-header__inner {
-    height: 64px;
+    height: 72px;
     display: flex;
     align-items: center;
     gap: 16px;
   }
 
   .logo {
-    position: relative;
     display: block;
-    padding-top: 10px;
-    text-decoration: none;
-    color: var(--ink);
     margin-right: auto;
   }
 
-  .logo__cutie {
-    position: absolute;
-    top: -2px;
-    left: -4px;
-    font-family: var(--font-script);
-    font-size: 22px;
-    transform: rotate(-12deg);
-  }
-
-  .logo__poppers {
-    font-family: var(--font-display);
-    font-size: 30px;
-    letter-spacing: 0.5px;
+  .logo img {
+    width: auto;
+    height: 58px;
   }
 
   .site-nav {
@@ -517,7 +508,7 @@
 
   .product-card__media {
     position: relative;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1;
     border-radius: var(--radius-l);
     overflow: hidden;
     background: var(--tint, var(--pink-pale));
@@ -744,7 +735,7 @@
   .hero {
     display: grid;
     gap: 20px;
-    padding-top: 24px;
+    padding-top: 32px;
   }
 
   @media (min-width: 900px) {
@@ -752,7 +743,7 @@
       grid-template-columns: 1.1fr 1fr;
       align-items: center;
       gap: 48px;
-      padding-top: 48px;
+      padding-top: 72px;
     }
   }
 
@@ -766,7 +757,8 @@
     font-family: var(--font-display);
     font-weight: 400;
     font-size: clamp(44px, 12.5vw, 96px);
-    line-height: 0.92;
+    line-height: 1;
+    padding-top: 0.08em;
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
@@ -804,17 +796,11 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 8px;
-    height: 300px;
+    aspect-ratio: 3 / 2;
     padding: 8px;
     border-radius: var(--radius-xl);
     border: var(--border);
     background: var(--pink-pale);
-  }
-
-  @media (min-width: 900px) {
-    .hero__collage {
-      height: 440px;
-    }
   }
 
   .hero__collage picture:first-child {
@@ -976,17 +962,24 @@
   }
 
   .hook-pills {
-    display: flex;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
     margin-top: 16px;
   }
 
+  .hook-pills li {
+    display: flex;
+    justify-content: center;
+  }
+
   .hook-pill {
-    padding: 8px 14px;
+    padding: 8px 12px;
     border-radius: 999px;
     color: var(--ink);
     font-weight: 700;
     font-size: 14px;
+    white-space: nowrap;
   }
 
   .hook-pill--silver {
@@ -1016,13 +1009,47 @@
     display: flex;
     gap: 12px;
     overflow-x: auto;
-    padding-bottom: 6px;
+    padding-bottom: 14px;
     scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .carousel {
+      scrollbar-width: thin;
+      scrollbar-color: var(--ink) var(--pink-pale);
+    }
+  }
+
+  .carousel::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  /* Keep the right-hand gutter when scrolled to the end */
+  .carousel::after {
+    content: "";
+    flex: none;
+    width: 1px;
+  }
+
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .carousel::-webkit-scrollbar-track {
+    margin-inline: var(--gutter);
+    border-radius: 999px;
+    background: var(--pink-pale);
+  }
+
+  .carousel::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: var(--ink);
   }
 
   .carousel__item {
     flex: none;
-    width: 150px;
+    width: 160px;
     scroll-snap-align: start;
   }
 
@@ -1034,7 +1061,7 @@
   }
 
   .carousel__media {
-    height: 170px;
+    aspect-ratio: 1;
     border-radius: var(--radius-m);
     overflow: hidden;
     background: var(--tint);
@@ -1081,6 +1108,11 @@
     object-fit: cover;
   }
 
+  /* Each image's wrapper fills the square so object-fit (cover/contain) applies */
+  .gallery__main [data-gallery-image] {
+    height: 100%;
+  }
+
   .gallery__main picture[hidden] {
     display: none;
   }
@@ -1094,7 +1126,7 @@
 
   .gallery__thumb {
     padding: 0;
-    height: 64px;
+    aspect-ratio: 1;
     border-radius: var(--radius-s);
     border: 2px solid transparent;
     overflow: hidden;
@@ -1322,7 +1354,7 @@
   .cart-line__media {
     flex: none;
     width: 72px;
-    height: 84px;
+    height: 72px;
     border-radius: var(--radius-s);
     overflow: hidden;
     background: var(--pink-pale);
@@ -1537,6 +1569,14 @@
 }
 
 @layer utilities {
+  /* Line drawings: show the whole motif, centred, instead of cropping like a photo */
+  img.is-drawing {
+    object-fit: contain;
+    object-position: center;
+    padding: 6%;
+    background: var(--white);
+  }
+
   .nowrap {
     white-space: nowrap;
   }

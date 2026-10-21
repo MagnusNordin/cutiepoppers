@@ -26,7 +26,7 @@ eleventyComputed:
       {%- for img in product.images %}
       {%- set isFirst = loop.first %}
       <div data-gallery-image="{{ loop.index0 }}"{% if not isFirst %} hidden{% endif %}>
-        {% productImage img.src, img.alt, { priority: isFirst, sizes: "(min-width: 900px) 560px, calc(100vw - 32px)", widths: [480, 720, 960] } %}
+        {% productImage img.src, img.alt, { priority: isFirst, sizes: "(min-width: 900px) 560px, calc(100vw - 32px)", widths: [480, 720, 960], className: "is-drawing" if img.fit == "contain" else "" } %}
       </div>
       {%- endfor %}
     </div>
@@ -34,7 +34,7 @@ eleventyComputed:
     <div class="gallery__thumbs" role="group" aria-label="Fler bilder">
       {%- for img in product.images %}
       <button type="button" class="gallery__thumb" data-gallery-thumb="{{ loop.index0 }}" aria-label="Visa bild {{ loop.index }} av {{ product.images.length }}"{% if loop.first %} aria-current="true"{% endif %}>
-        {% productImage img.src, "", { sizes: "100px", widths: [320] } %}
+        {% productImage img.src, "", { sizes: "100px", widths: [320], className: "is-drawing" if img.fit == "contain" else "" } %}
       </button>
       {%- endfor %}
     </div>

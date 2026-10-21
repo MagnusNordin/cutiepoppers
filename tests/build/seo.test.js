@@ -104,6 +104,9 @@ describe("product pages", () => {
       expect(prod.image.every((u) => u.startsWith(`${ORIGIN}/img/`))).toBe(true);
       expect(ld.find((x) => x["@type"] === "BreadcrumbList").itemListElement).toHaveLength(3);
       expect(doc.querySelector("h1").textContent.trim()).toBe(product.name);
+      const crumbs = [...doc.querySelectorAll(".breadcrumbs li")].map((li) => li.textContent.trim());
+      expect(crumbs[0]).toBe("Startsida");
+      expect(crumbs.at(-1)).toBe(product.name);
     });
   }
 });
@@ -115,6 +118,7 @@ describe("category pages", () => {
       const count = products.filter((p) => p.categories.includes(cat.slug)).length;
       expect(doc.querySelectorAll(".product-card")).toHaveLength(count);
       expect(doc.querySelector('.chip[aria-current="page"]').textContent.trim()).toBe(cat.name);
+      expect(doc.querySelectorAll(".breadcrumbs li")).toHaveLength(2);
       expect(jsonLd(doc).find((x) => x["@type"] === "ItemList").numberOfItems).toBe(count);
     });
   }

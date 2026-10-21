@@ -12,7 +12,8 @@
       },
       {
         "src": "swim-hut-black.png",
-        "alt": "Badhytt i svart, 3D-printade örhängen (bild 2)"
+        "alt": "Badhytt i svart, 3D-printade örhängen (bild 2)",
+        "fit": "contain"
       }
     ],
     "inStock": true,
@@ -31,7 +32,8 @@
       },
       {
         "src": "football-dribbler-black.png",
-        "alt": "Fotbollsspelare i svart, 3D-printade örhängen (bild 2)"
+        "alt": "Fotbollsspelare i svart, 3D-printade örhängen (bild 2)",
+        "fit": "contain"
       }
     ],
     "inStock": true,
@@ -50,7 +52,8 @@
       },
       {
         "src": "football-black.png",
-        "alt": "Fotboll i svart, 3D-printade örhängen (bild 2)"
+        "alt": "Fotboll i svart, 3D-printade örhängen (bild 2)",
+        "fit": "contain"
       }
     ],
     "inStock": true,
@@ -437,7 +440,8 @@
     "images": [
       {
         "src": "leopard.webp",
-        "alt": "Leopard, 3D-printade örhängen"
+        "alt": "Leopard, 3D-printade örhängen",
+        "fit": "contain"
       }
     ],
     "inStock": true,

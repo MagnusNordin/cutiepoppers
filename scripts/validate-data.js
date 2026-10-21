@@ -28,6 +28,8 @@ export const productSchema = {
           properties: {
             src: { type: "string", pattern: "^[a-z0-9-]+\\.(jpe?g|png|webp)$" },
             alt: { type: "string", minLength: 5 },
+            // "contain" = line drawing: show whole and centred instead of cropping
+            fit: { enum: ["contain"] },
           },
         },
       },
