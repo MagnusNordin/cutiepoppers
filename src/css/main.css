@@ -1108,6 +1108,11 @@
     object-fit: cover;
   }
 
+  /* Each image's wrapper fills the square so object-fit (cover/contain) applies */
+  .gallery__main [data-gallery-image] {
+    height: 100%;
+  }
+
   .gallery__main picture[hidden] {
     display: none;
   }
