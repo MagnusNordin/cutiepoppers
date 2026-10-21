@@ -135,6 +135,12 @@ describe("sitemap and robots", () => {
     expect(locs.some((l) => l.includes("404"))).toBe(false);
   });
 
+  it("gives every URL a valid lastmod date", () => {
+    const lastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1]);
+    expect(lastmods).toHaveLength(locs.length);
+    for (const d of lastmods) expect(d).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  });
+
   it("robots.txt points to the sitemap", () => {
     expect(fs.readFileSync(path.join(SITE, "robots.txt"), "utf8")).toContain(`Sitemap: ${ORIGIN}/sitemap.xml`);
   });
