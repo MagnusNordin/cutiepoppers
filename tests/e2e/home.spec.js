@@ -15,8 +15,8 @@ test.describe("start page", () => {
   test("lists the ten colours and both hooks", async ({ page }) => {
     await page.goto("/");
     const explainer = page.locator(".explainer");
-    await expect(explainer.locator(".swatch-list li")).toHaveCount(10);
-    await expect(explainer.getByText("Guld", { exact: true })).toBeVisible();
+    await expect(explainer.getByRole("list", { name: "Färger" }).getByRole("listitem")).toHaveCount(10);
+    await expect(explainer.getByRole("list", { name: "Krokar" }).getByRole("listitem")).toHaveText(["Silver", "Guld"]);
   });
 });
 

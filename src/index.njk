@@ -60,19 +60,20 @@ scripts: [grid-more]
 <section class="explainer" aria-labelledby="explainer-title">
   <div class="container explainer__inner">
     <div>
-      <h2 id="explainer-title" class="explainer__title">Din färg.<br>Din krok.</h2>
-      <p class="explainer__text">Varje par printas när du beställer. Välj bland tio färger och silver- eller guldfärgad krok — nickelfri och blyfri.</p>
+      <h2 id="explainer-title" class="explainer__title">Din färg<br>Din krok</h2>
+      <p class="explainer__text">Varje beställning printas när du beställer. Välj bland tio färger och silver- eller guldfärgad krok — nickelfri och blyfri.</p>
     </div>
     <div>
-      <ul class="swatch-list">
+      <ul class="swatch-list" aria-label="Färger">
         {%- for c in site.colors %}
         <li><span class="swatch-dot" style="--dot: {{ c.hex }}" aria-hidden="true"></span>{{ c.name }}</li>
         {%- endfor %}
       </ul>
-      <div class="hook-pills">
-        <span class="hook-pill hook-pill--silver">Silver</span>
-        <span class="hook-pill hook-pill--guld">Guld</span>
-      </div>
+      <ul class="swatch-list" aria-label="Krokar">
+        {%- for h in site.hooks %}
+        <li><span class="swatch-dot swatch-dot--{{ h.id }}" aria-hidden="true"></span>{{ h.name }}</li>
+        {%- endfor %}
+      </ul>
     </div>
   </div>
 </section>
