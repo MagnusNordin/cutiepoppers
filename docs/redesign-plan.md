@@ -318,3 +318,17 @@ Rough size: phase 1 ≈ 2–3 days, 2 ≈ 2–3 days, 3 ≈ 2 days, 4 ≈ 2–3 
 - **Colour availability:** the design implies every motif in all 10 colours; confirm that's true, otherwise add per-product `colors`.
 - **Spam/abuse of the order form** → Turnstile + honeypot + rate limit in the Worker.
 - **Instagram in-app browser** (where most visitors arrive): test clipboard, `localStorage` and form submit in it explicitly; WebKit e2e covers most of it.
+
+## 12. Implementation notes (2026-10-20)
+
+Implemented on branch `redesign`, one commit per phase. Where it differs from the plan above:
+
+- **Category chips are links, not in-place filters.** Each chip opens its static category page. This is simpler, every filter is crawlable, and it works without JS.
+- **Worker tests use plain Vitest**, with `fetch`, time and randomness injected, instead of `@cloudflare/vitest-pool-workers`. The e2e tests still run full orders through the real Worker in `wrangler dev`, with e-mail in dry-run mode and Turnstile test keys.
+- **Images:** AVIF + WebP + JPEG with widths 320–960. The first build takes ~3–4 minutes; CI caches `_site/img`.
+- **Customer confirmation e-mails are off** (`SEND_CUSTOMER_CONFIRMATION=false`) until `cutiepoppers.shop` is verified in Resend after the DNS move. Orders to the owner are sent from `onboarding@resend.dev`.
+- **Returns:** the köpvillkor give a plain 14-day ångerrätt, the simplest safe default, plus "fel på varan? vi ersätter den".
+- **Merchant Center feed** at `/merchant-feed.xml`.
+- **Lighthouse (mobile, local):** performance 94–100; accessibility, best practices and SEO 100.
+
+Still to do, together with the owner (§8.5): the DNS move, Email Routing for `hej@`, Resend domain verification (then set `EMAIL_FROM` to `Cutie Poppers <hej@cutiepoppers.shop>` and `SEND_CUSTOMER_CONFIRMATION=true`), custom domains on the Worker, Cloudflare Web Analytics, Search Console/Bing/Merchant Center, and retiring GitHub Pages.

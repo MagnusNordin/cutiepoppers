@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+---
+<article class="container prose-page">
+  <h1 class="display-title">{{ heading or title }}</h1>
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

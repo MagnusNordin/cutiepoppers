@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+permalink: /varukorg/
+title: Varukorg
+description: Din varukorg hos Cutie Poppers. Kolla dina örhängen och nyckelringar och gå vidare till beställning, eller beställ via Instagram.
+noindex: true
+scripts: [cart-page]
+---
+<div class="container narrow" data-cart-page>
+  <div class="page-head">
+    <h1 class="display-title">Varukorg</h1>
+    <span class="page-head__meta" data-cart-meta></span>
+  </div>
+
+  <noscript><p class="card">Varukorgen behöver JavaScript. Du kan också <a href="{{ site.instagram.dm }}">beställa via Instagram</a>.</p></noscript>
+
+  <div class="empty-state" data-cart-empty hidden>
+    <p class="hero__lead">Varukorgen är tom. Hitta ett motiv du gillar!</p>
+    <a class="btn btn--primary" href="/#shop">Till alla motiv</a>
+  </div>
+
+  <div data-cart-filled hidden>
+    <ul class="cart-lines" data-cart-lines></ul>
+
+    <div class="card card--dashed summary">
+      <div class="summary__row"><span>Delsumma</span><strong data-cart-subtotal></strong></div>
+      <div class="summary__row"><span>Frakt (PostNord)</span><span>Beräknas efter beställning</span></div>
+      <div class="summary__row summary__row--total"><span>Totalt</span><span class="summary__total" data-cart-total></span></div>
+    </div>
+
+    <div class="cart-actions">
+      <a class="btn btn--primary" href="/bestallning/" data-track="begin_checkout">Till beställning</a>
+      <button type="button" class="btn btn--white" data-instagram-order>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        Beställ via Instagram istället
+      </button>
+      <p class="note" data-instagram-status role="status">Vi kopierar din beställning — klistra bara in den i DM:et.</p>
+      <textarea class="visually-hidden" data-instagram-fallback aria-hidden="true" tabindex="-1" readonly></textarea>
+    </div>
+  </div>
+</div>
+
+<template data-cart-line-template>
+  <li class="cart-line">
+    <div class="cart-line__media"><img alt="" width="72" height="84" data-line-image></div>
+    <div class="cart-line__body">
+      <a class="cart-line__name" data-line-name></a>
+      <span class="cart-line__meta" data-line-kind></span>
+      <span class="cart-line__meta"><span class="dot" data-line-dot></span><span data-line-options></span></span>
+    </div>
+    <div class="cart-line__side">
+      <span class="cart-line__price" data-line-price></span>
+      <div class="qty">
+        <button type="button" class="icon-btn" data-line-dec>−</button>
+        <span data-line-qty></span>
+        <button type="button" class="icon-btn" data-line-inc>+</button>
+        <button type="button" class="icon-btn" data-line-remove>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </li>
+</template>
+<script type="application/json" data-instagram-config>{"dm": "{{ site.instagram.dm }}"}</script>

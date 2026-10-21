@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ fullTitle or (title | pageTitle(site)) }}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+{%- if noindex %}
+<meta name="robots" content="noindex, follow">
+{%- endif %}
+<meta name="theme-color" content="#F8D7F2">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/logo192.png">
+<link rel="preload" href="{{ assetBase }}/fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ assetBase }}/fonts/dm-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ assetBase }}/css/main.css">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{{ ogTitle or fullTitle or (title | pageTitle(site)) }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+{%- set _ogSlug = ogSlug or "default" %}{% set _ogSource = ogSource or "crab-red.jpg" %}
+<meta property="og:image" content="{{ site.url }}{% ogImage _ogSlug, _ogSource %}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{%- if site.isProduction %}
+<script defer src="{{ site.umami.src }}" data-website-id="{{ site.umami.websiteId }}" data-domains="{{ site.umami.domains }}"></script>
+{%- endif %}
+<script type="module" src="{{ assetBase }}/js/ui/common.js"></script>
+{%- for s in scripts %}
+<script type="module" src="{{ assetBase }}/js/ui/{{ s }}.js"></script>
+{%- endfor %}
+</head>
+<body class="{{ bodyClass }}">
+<a class="skip-link" href="#main">Hoppa till innehållet</a>
+{% include "partials/header.njk" %}
+<main id="main" tabindex="-1">
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+</body>
+</html>

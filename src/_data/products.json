@@ -1,0 +1,606 @@
+[
+  {
+    "slug": "badhytt",
+    "name": "Badhytt",
+    "categories": ["souvenir"],
+    "sizeCm": 4,
+    "description": "Den karakteristiska badhytten från Hjo, nu att bära i örat. En souvenir för alla som har badat vid Vättern.",
+    "images": [
+      {
+        "src": "swim-hut-pink.jpeg",
+        "alt": "Badhytt i rosa, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "swim-hut-black.png",
+        "alt": "Badhytt i svart, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 1
+  },
+  {
+    "slug": "fotbollsspelare",
+    "name": "Fotbollsspelare",
+    "categories": ["sport"],
+    "sizeCm": 4,
+    "description": "En spelare mitt i dribblingen. För dig på planen, på läktaren eller vid sidlinjen med termosen.",
+    "images": [
+      {
+        "src": "football-dribbler-pink.jpeg",
+        "alt": "Fotbollsspelare i rosa, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "football-dribbler-black.png",
+        "alt": "Fotbollsspelare i svart, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 2
+  },
+  {
+    "slug": "fotboll",
+    "name": "Fotboll",
+    "categories": ["sport"],
+    "sizeCm": 3,
+    "description": "En liten fotboll för den stora kärleken till spelet. Bär dem till matchen — eller överallt.",
+    "images": [
+      {
+        "src": "football-pink.jpeg",
+        "alt": "Fotboll i rosa, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "football-black.png",
+        "alt": "Fotboll i svart, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 3
+  },
+  {
+    "slug": "gymnastik",
+    "name": "Gymnastik",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "En gymnast i full sträckning. För alla som har spenderat timmar på mattan och i hopphallen.",
+    "images": [
+      {
+        "src": "gymnast.png",
+        "alt": "Gymnastik, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 4
+  },
+  {
+    "slug": "hjo-hjarta",
+    "name": "Hjo-hjärta",
+    "categories": ["souvenir"],
+    "sizeCm": 3,
+    "description": "För alla som älskar Hjo. En liten bit av trästaden att ta med sig hem.",
+    "images": [
+      {
+        "src": "ilovehjo.png",
+        "alt": "Hjo-hjärta, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 5
+  },
+  {
+    "slug": "blackfisk",
+    "name": "Bläckfisk",
+    "categories": ["marint", "djur"],
+    "sizeCm": 5,
+    "description": "Åtta armar och massor av charm. En lekfull bläckfisk som gungar när du rör dig.",
+    "images": [
+      {
+        "src": "octopus-red.jpg",
+        "alt": "Bläckfisk i röd, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 6
+  },
+  {
+    "slug": "krafta",
+    "name": "Kräfta",
+    "categories": ["marint", "djur"],
+    "sizeCm": 5,
+    "description": "Kräftskivans bästa accessoar, direkt efter hatten. Perfekta i augusti, och resten av året.",
+    "images": [
+      {
+        "src": "shrimp-red.jpg",
+        "alt": "Kräfta i röd, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 7
+  },
+  {
+    "slug": "ankare",
+    "name": "Ankare",
+    "categories": ["marint"],
+    "sizeCm": 5,
+    "description": "Ett klassiskt ankare för den som håller fast vid det som är viktigt. Marint och tidlöst.",
+    "images": [
+      {
+        "src": "anchor-blue.jpg",
+        "alt": "Ankare i blå, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 8
+  },
+  {
+    "slug": "krabba",
+    "name": "Krabba",
+    "categories": ["marint", "djur"],
+    "sizeCm": 5,
+    "description": "En krabba som går sidledes rakt in i sommaren. För alla som har fiskat krabba från en brygga.",
+    "images": [
+      {
+        "src": "crab-red.jpg",
+        "alt": "Krabba i röd, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 9
+  },
+  {
+    "slug": "segelbat",
+    "name": "Segelbåt",
+    "categories": ["marint"],
+    "sizeCm": 5,
+    "description": "Fulla segel mot sommaren. För seglare, båtfolk och alla som drömmer om nästa tur.",
+    "images": [
+      {
+        "src": "sail-boat-blue.jpg",
+        "alt": "Segelbåt i blå, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 10
+  },
+  {
+    "slug": "hummer",
+    "name": "Hummer",
+    "categories": ["marint", "djur"],
+    "sizeCm": 5,
+    "description": "Havets kung, nu som örhänge. Lite lyx, mycket humor.",
+    "images": [
+      {
+        "src": "lobster-red.jpg",
+        "alt": "Hummer i röd, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 11
+  },
+  {
+    "slug": "fyr",
+    "name": "Fyr",
+    "categories": ["marint"],
+    "sizeCm": 5,
+    "description": "En fyr som visar vägen hem. För dig som längtar till kusten.",
+    "images": [
+      {
+        "src": "light-house-blue.jpg",
+        "alt": "Fyr i blå, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 12
+  },
+  {
+    "slug": "manet",
+    "name": "Manet",
+    "categories": ["marint", "djur"],
+    "sizeCm": 5,
+    "description": "En svävande manet — den enda sorten du vill ha nära dig på stranden.",
+    "images": [
+      {
+        "src": "jelly-fish-blue.jpg",
+        "alt": "Manet i blå, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 13
+  },
+  {
+    "slug": "katt",
+    "name": "Katt",
+    "categories": ["djur"],
+    "sizeCm": 5,
+    "description": "En katt som gör precis som den vill. För kattmänniskor, helt enkelt.",
+    "images": [
+      {
+        "src": "cat-white.jpg",
+        "alt": "Katt i vit, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 14
+  },
+  {
+    "slug": "hast",
+    "name": "Häst",
+    "categories": ["djur"],
+    "sizeCm": 5,
+    "description": "En häst i full galopp. För stallvänner, ryttare och alla som har drömt om en egen.",
+    "images": [
+      {
+        "src": "horse-pink-2.jpeg",
+        "alt": "Häst i rosa, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "horse-pink.jpg",
+        "alt": "Häst i rosa, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 15
+  },
+  {
+    "slug": "motorcykel",
+    "name": "Motorcykel",
+    "categories": ["vardag"],
+    "sizeCm": 5,
+    "description": "En motorcykel för dig som älskar vägen, ljudet och friheten.",
+    "images": [
+      {
+        "src": "motorcycle-black.jpeg",
+        "alt": "Motorcykel i svart, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 16
+  },
+  {
+    "slug": "kaffe",
+    "name": "Kaffe",
+    "categories": ["vardag"],
+    "sizeCm": 5,
+    "description": "En kopp kaffe för dig som inte pratar förrän den första är uppdrucken. Fika att bära med sig.",
+    "images": [
+      {
+        "src": "coffee-black.jpg",
+        "alt": "Kaffe i svart, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 17
+  },
+  {
+    "slug": "horlurar",
+    "name": "Hörlurar",
+    "categories": ["vardag"],
+    "sizeCm": 5,
+    "description": "Ett par hörlurar för den som alltid har en podd eller en låt på gång.",
+    "images": [
+      {
+        "src": "headphones-pink.jpg",
+        "alt": "Hörlurar i rosa, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 18
+  },
+  {
+    "slug": "mus",
+    "name": "Mus",
+    "categories": ["vardag"],
+    "sizeCm": 5,
+    "description": "En datormus för den som klickar sig genom dagen. Lite nördigt, mycket charmigt.",
+    "images": [
+      {
+        "src": "mouse-white.jpg",
+        "alt": "Mus i vit, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 19
+  },
+  {
+    "slug": "morgonsimmare",
+    "name": "Morgonsimmare",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "För dig som badar året runt, helst innan alla andra har vaknat. Kallt vatten, varmt hjärta.",
+    "images": [
+      {
+        "src": "morning-swims-white.jpg",
+        "alt": "Morgonsimmare i vit, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 20
+  },
+  {
+    "slug": "overtankare",
+    "name": "Övertänkare",
+    "categories": ["statement"],
+    "sizeCm": 5,
+    "description": "För dig som redan har tänkt igenom det här tio gånger. Ett par örhängen som säger det du inte hinner säga själv.",
+    "images": [
+      {
+        "src": "over-thinker-red.jpg",
+        "alt": "Övertänkare i röd, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 21
+  },
+  {
+    "slug": "sprakpolis",
+    "name": "Språkpolis",
+    "categories": ["statement"],
+    "sizeCm": 5,
+    "description": "Särskrivningar? Inte på din vakt. För den som rättar menyer i huvudet och står för det.",
+    "images": [
+      {
+        "src": "sprak-polis-black.jpg",
+        "alt": "Språkpolis i svart, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 22
+  },
+  {
+    "slug": "sax",
+    "name": "Sax",
+    "categories": ["vardag"],
+    "sizeCm": 5,
+    "description": "En sax för frisörer, sömmerskor och pysselproffs. Vass stil, helt ofarlig.",
+    "images": [
+      {
+        "src": "scissors-pink.jpeg",
+        "alt": "Sax i rosa, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 23
+  },
+  {
+    "slug": "treenighet",
+    "name": "Treenighet",
+    "categories": ["statement"],
+    "sizeCm": 5,
+    "description": "En treenighetsknut med tre sammanflätade bågar som aldrig tar slut. En tidlös symbol för det som hör ihop.",
+    "images": [
+      {
+        "src": "trinity-green.jpeg",
+        "alt": "Treenighet i grön, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "trinity-white.jpg",
+        "alt": "Treenighet i vit, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 24
+  },
+  {
+    "slug": "kvinnosymbol",
+    "name": "Kvinnosymbol",
+    "categories": ["statement"],
+    "sizeCm": 5,
+    "description": "Venussymbolen i din favoritfärg. Ett litet, tydligt ställningstagande att bära varje dag.",
+    "images": [
+      {
+        "src": "woman.webp",
+        "alt": "Kvinnosymbol, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 25
+  },
+  {
+    "slug": "fred",
+    "name": "Fred",
+    "categories": ["statement"],
+    "sizeCm": 4,
+    "description": "Det klassiska fredsmärket, lika aktuellt som alltid. Enkelt, grafiskt och lätt att matcha med allt.",
+    "images": [
+      {
+        "src": "peace-black.jpg",
+        "alt": "Fred i svart, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "peace-purple.jpeg",
+        "alt": "Fred i lila, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 26
+  },
+  {
+    "slug": "innebandy",
+    "name": "Innebandy",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "En innebandyspelare med klubban redo. För spelare, tränare och föräldrar i hallen varje helg.",
+    "images": [
+      {
+        "src": "floorball.webp",
+        "alt": "Innebandy, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 27
+  },
+  {
+    "slug": "leopard",
+    "name": "Leopard",
+    "categories": ["statement", "djur"],
+    "sizeCm": 5,
+    "description": "Ett leopardhuvud med attityd. För dagar när du vill vara lite vildare än vanligt.",
+    "images": [
+      {
+        "src": "leopard.webp",
+        "alt": "Leopard, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 28
+  },
+  {
+    "slug": "basketboll-ifylld",
+    "name": "Basketboll ifylld",
+    "categories": ["sport"],
+    "sizeCm": 4.5,
+    "description": "En helt ifylld basketboll där färgen du väljer ersätter orange. Gör den till ditt lags färg.",
+    "images": [
+      {
+        "src": "basketball-filled-orange.jpg",
+        "alt": "Basketboll ifylld i orange, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 29
+  },
+  {
+    "slug": "ingen-marionett",
+    "name": "Ingen marionett",
+    "categories": ["statement"],
+    "sizeCm": 4,
+    "description": "Ta ingen skit från någon. Ingen drar i dina trådar — och nu syns det också.",
+    "images": [
+      {
+        "src": "no-puppet.webp",
+        "alt": "Ingen marionett, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 30
+  },
+  {
+    "slug": "handbollsskytt",
+    "name": "Handbollsskytt",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "En tjej som skjuter — med full kraft. För alla som älskar handboll.",
+    "images": [
+      {
+        "src": "handball-shooter.webp",
+        "alt": "Handbollsskytt, 3D-printade örhängen"
+      }
+    ],
+    "inStock": true,
+    "order": 31
+  },
+  {
+    "slug": "basketbollkorg",
+    "name": "Basketbollkorg",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "Korg och nät — swish! För alla som lever för det perfekta skottet.",
+    "images": [
+      {
+        "src": "basketball-black.jpg",
+        "alt": "Basketbollkorg i svart, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "basketball-black-2.jpg",
+        "alt": "Basketbollkorg i svart, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 32
+  },
+  {
+    "slug": "basketboll",
+    "name": "Basketboll",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "En basketboll i grafisk form. För dig som alltid har en boll i närheten.",
+    "images": [
+      {
+        "src": "basketball-ball-black.jpg",
+        "alt": "Basketboll i svart, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "basketball-ball-key-pink.jpg",
+        "alt": "Basketboll i rosa, 3D-printade örhängen (bild 2)"
+      }
+    ],
+    "inStock": true,
+    "order": 33
+  },
+  {
+    "slug": "basketbollsskytt",
+    "name": "Basketbollsskytt",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "En tjej mitt i skottet. För basketspelare som vet hur det känns när bollen går i.",
+    "images": [
+      {
+        "src": "basketball-shooter-black-2.jpg",
+        "alt": "Basketbollsskytt i svart, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "basketball-shooter-green.jpg",
+        "alt": "Basketbollsskytt i grön, 3D-printade örhängen (bild 2)"
+      },
+      {
+        "src": "basetkball-shooter-yellow.jpg",
+        "alt": "Basketbollsskytt i gul, 3D-printade örhängen (bild 3)"
+      }
+    ],
+    "inStock": true,
+    "order": 34
+  },
+  {
+    "slug": "basketbollsdribblare",
+    "name": "Basketbollsdribblare",
+    "categories": ["sport"],
+    "sizeCm": 5,
+    "description": "En tjej som dribblar förbi alla. Snabb, självsäker och redo för match.",
+    "images": [
+      {
+        "src": "basketball-dribbler-pink.jpg",
+        "alt": "Basketbollsdribblare i rosa, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "basketball-dribbler-pink-2.jpg",
+        "alt": "Basketbollsdribblare i rosa, 3D-printade örhängen (bild 2)"
+      },
+      {
+        "src": "basketball-dribbler-yellow.jpg",
+        "alt": "Basketbollsdribblare i gul, 3D-printade örhängen (bild 3)"
+      },
+      {
+        "src": "basketball-dribble-pink-3.jpg",
+        "alt": "Basketbollsdribblare i rosa, 3D-printade örhängen (bild 4)"
+      }
+    ],
+    "inStock": true,
+    "order": 35
+  },
+  {
+    "slug": "hjarta",
+    "name": "Hjärta",
+    "categories": ["statement"],
+    "sizeCm": 4,
+    "description": "Ett rent och enkelt hjärta. Lika fint som present som till dig själv.",
+    "images": [
+      {
+        "src": "heart-blue.jpg",
+        "alt": "Hjärta i blå, 3D-printade örhängen (bild 1)"
+      },
+      {
+        "src": "heart-green.jpeg",
+        "alt": "Hjärta i grön, 3D-printade örhängen (bild 2)"
+      },
+      {
+        "src": "heart-orange.jpg",
+        "alt": "Hjärta i orange, 3D-printade örhängen (bild 3)"
+      },
+      {
+        "src": "heart-pink.jpg",
+        "alt": "Hjärta i rosa, 3D-printade örhängen (bild 4)"
+      }
+    ],
+    "inStock": true,
+    "order": 36
+  }
+]

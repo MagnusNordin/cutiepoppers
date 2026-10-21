@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+permalink: /tack/
+title: Tack för beställningen
+description: Tack för din beställning hos Cutie Poppers. Vi hör av oss med en Swish-förfrågan och skickar sedan dina varor.
+noindex: true
+scripts: [thanks]
+---
+<div class="container narrow thanks" data-thanks>
+  <div class="thanks__check" aria-hidden="true">
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg>
+  </div>
+  <span class="thanks__script">Yay, tack!</span>
+  <h1 class="display-title">Beställningen är skickad</h1>
+  <p class="thanks__lead" data-thanks-lead>Vi hör av oss {{ site.responseTime }} med en Swish-förfrågan. Sedan printar vi dina varor och postar dem.</p>
+  <div class="card" data-thanks-order hidden>
+    <p><strong>Order <span data-thanks-number></span></strong></p>
+    <p class="field__hint" data-thanks-items></p>
+  </div>
+  <div class="cart-actions">
+    <a class="btn btn--dark" href="{{ site.instagram.url }}" rel="noopener" data-track="outbound_instagram">Tagga oss när du bär dem</a>
+    <a class="btn btn--outline" href="/">Fortsätt shoppa</a>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+---
+layout: layouts/base.njk
+permalink: /bestallning/
+title: Beställning
+description: Skicka din beställning till Cutie Poppers. Du betalar med Swish först när vi har bekräftat beställningen.
+noindex: true
+scripts: [checkout]
+---
+<div class="container narrow" data-checkout>
+  <div class="page-head">
+    <h1 class="display-title">Beställning</h1>
+    <a class="page-head__meta" href="/varukorg/">Ändra varukorg</a>
+  </div>
+
+  <section class="card card--dark steps" aria-labelledby="steps-title">
+    <h2 id="steps-title" class="steps__title">Så funkar det</h2>
+    <ol>
+      <li><span class="steps__n" aria-hidden="true">1</span>Skicka beställningen — det tar en minut.</li>
+      <li><span class="steps__n" aria-hidden="true">2</span>Vi bekräftar och skickar en Swish-förfrågan {{ site.responseTime }}.</li>
+      <li><span class="steps__n" aria-hidden="true">3</span>Vi printar dina varor och postar dem inom {{ site.dispatch }}.</li>
+    </ol>
+  </section>
+
+  <div class="empty-state" data-checkout-empty hidden>
+    <p class="hero__lead">Varukorgen är tom, så det finns inget att beställa än.</p>
+    <a class="btn btn--primary" href="/#shop">Till alla motiv</a>
+  </div>
+
+  <form class="checkout-form" data-checkout-form action="/api/orders" method="post" novalidate>
+    {%- set fields = [
+      { id: "name", label: "Namn", type: "text", auto: "name", ph: "För- och efternamn" },
+      { id: "phone", label: "Mobilnummer", type: "tel", auto: "tel", ph: "070-123 45 67", hint: "Hit skickar vi Swish-förfrågan.", mode: "tel" },
+      { id: "email", label: "E-post", type: "email", auto: "email", ph: "namn@exempel.se", hint: "För orderbekräftelsen." },
+      { id: "street", label: "Gatuadress", type: "text", auto: "street-address", ph: "Gata och nummer" }
+    ] %}
+    {%- for f in fields %}
+    <div class="field">
+      <label for="{{ f.id }}">{{ f.label }}</label>
+      <input id="{{ f.id }}" name="{{ f.id }}" type="{{ f.type }}" autocomplete="{{ f.auto }}" placeholder="{{ f.ph }}"{% if f.mode %} inputmode="{{ f.mode }}"{% endif %} required aria-describedby="{{ f.id }}-error{% if f.hint %} {{ f.id }}-hint{% endif %}">
+      {%- if f.hint %}<span class="field__hint" id="{{ f.id }}-hint">{{ f.hint }}</span>{% endif %}
+      <span class="field__error" id="{{ f.id }}-error" data-error-for="{{ f.id }}"></span>
+    </div>
+    {%- endfor %}
+    <div class="field-row">
+      <div class="field">
+        <label for="zip">Postnummer</label>
+        <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="123 45" required aria-describedby="zip-error">
+        <span class="field__error" id="zip-error" data-error-for="zip"></span>
+      </div>
+      <div class="field">
+        <label for="city">Ort</label>
+        <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Ort" required aria-describedby="city-error">
+        <span class="field__error" id="city-error" data-error-for="city"></span>
+      </div>
+    </div>
+    <div class="field">
+      <label for="message">Meddelande <span class="field__optional">(valfritt)</span></label>
+      <textarea id="message" name="message" rows="3" maxlength="500" placeholder="T.ex. en present — skriv gärna vem den är till" aria-describedby="message-error"></textarea>
+      <span class="field__error" id="message-error" data-error-for="message"></span>
+    </div>
+    <div class="honeypot" aria-hidden="true">
+      <label for="website">Lämna tomt</label>
+      <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div class="card checkout-summary">
+      <span data-checkout-count></span>
+      <span class="checkout-summary__total" data-checkout-total></span>
+    </div>
+
+    <div class="cf-turnstile" data-sitekey="{{ site.turnstileSiteKey }}" data-language="sv" data-appearance="interaction-only"></div>
+
+    <p class="alert" role="alert" tabindex="-1" data-checkout-error hidden></p>
+    <button type="submit" class="btn btn--primary btn--block" data-checkout-submit>Skicka beställning</button>
+    <p class="note">Du betalar först när vi bekräftat. Ingen förskottsbetalning här. Läs <a href="/kopvillkor/">köpvillkoren</a> och <a href="/integritetspolicy/">integritetspolicyn</a>.</p>
+  </form>
+</div>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
