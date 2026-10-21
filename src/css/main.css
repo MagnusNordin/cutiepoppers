@@ -961,15 +961,32 @@
     border: 2px solid var(--white);
   }
 
-  .swatch-list + .swatch-list {
-    margin-top: 10px;
+  .hook-pills {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 16px;
   }
 
-  .swatch-dot--silver {
+  .hook-pills li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hook-pill {
+    padding: 8px 12px;
+    border-radius: 999px;
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .hook-pill--silver {
     background: linear-gradient(135deg, #f2f2f2, #a8a8a8);
   }
 
-  .swatch-dot--guld {
+  .hook-pill--guld {
     background: linear-gradient(135deg, #f6dd8a, #c9a23a);
   }
 
@@ -995,8 +1012,17 @@
     padding-bottom: 14px;
     scroll-snap-type: x mandatory;
     scroll-padding-inline: var(--gutter);
-    scrollbar-width: thin;
-    scrollbar-color: var(--ink) var(--pink-pale);
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .carousel {
+      scrollbar-width: thin;
+      scrollbar-color: var(--ink) var(--pink-pale);
+    }
+  }
+
+  .carousel::-webkit-scrollbar-button {
+    display: none;
   }
 
   /* Keep the right-hand gutter when scrolled to the end */
@@ -1538,6 +1564,14 @@
 }
 
 @layer utilities {
+  /* Line drawings: show the whole motif, centred, instead of cropping like a photo */
+  img.is-drawing {
+    object-fit: contain;
+    object-position: center;
+    padding: 6%;
+    background: var(--white);
+  }
+
   .nowrap {
     white-space: nowrap;
   }

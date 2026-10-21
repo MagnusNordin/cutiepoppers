@@ -69,9 +69,9 @@ scripts: [grid-more]
         <li><span class="swatch-dot" style="--dot: {{ c.hex }}" aria-hidden="true"></span>{{ c.name }}</li>
         {%- endfor %}
       </ul>
-      <ul class="swatch-list" aria-label="Krokar">
+      <ul class="hook-pills" aria-label="Krokar">
         {%- for h in site.hooks %}
-        <li><span class="swatch-dot swatch-dot--{{ h.id }}" aria-hidden="true"></span>{{ h.name }}</li>
+        <li><span class="hook-pill hook-pill--{{ h.id }}">{{ h.name }}</span></li>
         {%- endfor %}
       </ul>
     </div>
@@ -89,7 +89,7 @@ scripts: [grid-more]
     <li class="carousel__item">
       <a href="/motiv/{{ p.slug }}/">
         <div class="carousel__media" style="--tint: {{ loop.index0 | tint }}">
-          {% productImage p.images[0].src, p.images[0].alt, { sizes: "160px", widths: [320] } %}
+          {% productImage p.images[0].src, p.images[0].alt, { sizes: "160px", widths: [320], className: "is-drawing" if p.images[0].fit == "contain" else "" } %}
         </div>
         <span class="carousel__name">{{ p.name }}</span>
       </a>

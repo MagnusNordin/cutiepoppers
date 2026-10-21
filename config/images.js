@@ -6,7 +6,7 @@ import sharp from "sharp";
 
 export const SRC_DIR = "src/images/products";
 export const OUT_DIR = "_site";
-const BACKGROUND = "#FDEEFA";
+const BACKGROUND = "#FFFFFF";
 
 export const imageOptions = {
   widths: [320, 480, 720, 960],
@@ -16,7 +16,7 @@ export const imageOptions = {
   sharpAvifOptions: { quality: 50 },
   sharpWebpOptions: { quality: 62 },
   sharpJpegOptions: { quality: 72, mozjpeg: true },
-  // Transparent PNG/WebP cut-outs get the brand's pale pink instead of black.
+  // Transparent PNG/WebP line drawings get white instead of black.
   transform: (s) => s.rotate().flatten({ background: BACKGROUND }),
 };
 
