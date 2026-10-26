@@ -56,9 +56,7 @@ describe("JSON-LD", () => {
     expect(ld.offers.every((o) => o.priceCurrency === "SEK")).toBe(true);
     expect(ld.offers[0].availability).toBe("https://schema.org/InStock");
     expect(ld.offers[0].hasMerchantReturnPolicy.merchantReturnDays).toBe(14);
-    expect(ld.offers[0].hasMerchantReturnPolicy.returnFees).toBe(
-      "https://schema.org/ReturnFeesCustomerResponsibility",
-    );
+    expect(ld.offers[0].hasMerchantReturnPolicy.returnFees).toBe("https://schema.org/ReturnFeesCustomerResponsibility");
     expect(ld.offers[0].shippingDetails.shippingRate).toEqual({
       "@type": "MonetaryAmount",
       value: "22.00",

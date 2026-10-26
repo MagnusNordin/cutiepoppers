@@ -1,5 +1,5 @@
 // Build-time SEO helpers: titles, descriptions and JSON-LD objects.
-import { KINDS } from "../src/js/lib/catalog.js";
+import { KINDS, SHOP } from "../src/js/lib/catalog.js";
 
 const MAX_DESCRIPTION = 160;
 
@@ -66,14 +66,12 @@ export function returnPolicyLd() {
   };
 }
 
-// Typical PostNord letter postage; the exact amount is added to the Swish request.
-export const SHIPPING_RATE_SEK = 22;
-
 export function shippingDetailsLd() {
   const days = (minValue, maxValue) => ({ "@type": "QuantitativeValue", minValue, maxValue, unitCode: "DAY" });
+  // Lowest PostNord letter postage; the exact amount is added to the Swish request.
   return {
     "@type": "OfferShippingDetails",
-    shippingRate: { "@type": "MonetaryAmount", value: SHIPPING_RATE_SEK.toFixed(2), currency: "SEK" },
+    shippingRate: { "@type": "MonetaryAmount", value: (SHOP.shippingFromOre / 100).toFixed(2), currency: "SEK" },
     shippingDestination: { "@type": "DefinedRegion", addressCountry: "SE" },
     deliveryTime: {
       "@type": "ShippingDeliveryTime",
