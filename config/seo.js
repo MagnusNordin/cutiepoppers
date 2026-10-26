@@ -61,7 +61,26 @@ export function returnPolicyLd() {
     returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
     merchantReturnDays: 14,
     returnMethod: "https://schema.org/ReturnByMail",
-    returnFees: "https://schema.org/ReturnShippingFees",
+    // Köpvillkor: the customer pays return shipping (no fixed amount to declare).
+    returnFees: "https://schema.org/ReturnFeesCustomerResponsibility",
+  };
+}
+
+// Typical PostNord letter postage; the exact amount is added to the Swish request.
+export const SHIPPING_RATE_SEK = 22;
+
+export function shippingDetailsLd() {
+  const days = (minValue, maxValue) => ({ "@type": "QuantitativeValue", minValue, maxValue, unitCode: "DAY" });
+  return {
+    "@type": "OfferShippingDetails",
+    shippingRate: { "@type": "MonetaryAmount", value: SHIPPING_RATE_SEK.toFixed(2), currency: "SEK" },
+    shippingDestination: { "@type": "DefinedRegion", addressCountry: "SE" },
+    deliveryTime: {
+      "@type": "ShippingDeliveryTime",
+      // SHOP.dispatch: printed and sent within 3–4 working days; PostNord then takes a few days.
+      handlingTime: days(3, 4),
+      transitTime: days(1, 4),
+    },
   };
 }
 
@@ -89,6 +108,7 @@ export function productLd(product, site, imageUrls) {
       availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: { "@id": `${site.url}/#store` },
+      shippingDetails: shippingDetailsLd(),
       hasMerchantReturnPolicy: returnPolicyLd(),
     })),
   };
