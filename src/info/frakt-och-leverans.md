@@ -1,6 +1,6 @@
 ---
 title: Frakt och leverans
-description: Så skickar Cutie Poppers dina örhängen och nyckelringar. Vi levererar inom Sverige med PostNord, och frakten beräknas efter beställning.
+description: Så skickar Cutie Poppers dina örhängen och nyckelringar. Vi levererar inom Sverige med PostNord. Frakten kostar från 22 kr.
 permalink: /frakt-och-leverans/
 ---
 
